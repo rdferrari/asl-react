@@ -4,6 +4,7 @@ import Menu from "./components/Menu";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
 import Stories from "./components/Stories";
+import Posts from "./components/Posts";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
             </Route>
             <Route exact path="/stories">
               <Stories />
+            </Route>
+            <Route exact path="/posts">
+              <Posts />
             </Route>
           </Switch>
           <div className="footer">
