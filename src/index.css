@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* fonts */
+
+@font-face {
+  font-family: karla-bold;
+  src: url("/fonts/Karla-Bold.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: karla-bold-italic;
+  src: url("/fonts/Karla-BoldIItalic.ttf");
+}
+
+@font-face {
+  font-family: karla-italic;
+  src: url("/fonts/Karla-Italic.ttf");
+}
+
+@font-face {
+  font-family: karla-regular;
+  src: url("/fonts/Karla-Regular.ttf");
+}
+
+/* general */
+
+body {
+  margin: 0;
+  font-weight: 100;
+}
+
+h1 {
+  color: white;
+  font-family: karla-bold;
+  font-size: 70px;
+}
+
+h2 {
+  color: white;
+  font-family: karla-bold;
+  font-size: 60px;
+}
+
+h3 {
+  color: white;
+  font-family: karla-bold;
+  font-size: 60px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.button-home {
+  background-color: transparent;
+  border: 2px solid white;
+  font-family: karla-bold;
+  font-size: 25px;
+  padding: 15px 25px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: karla-regular;
+  font-size: 20px;
+  height: 160px;
+  margin-top: -30px;
+  width: 100%;
+}
+
+/* menu */
+
+.menu {
+  background-color: white;
+  font-family: karla-regular;
+  font-size: 20px;
+  height: 132px;
+  position: fixed;
+  top: -18px;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu ul {
+  position: absolute;
+  margin-top: 70px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+/* components */
+
+.components {
+  position: absolute;
+  top: 110px;
+  z-index: 1;
+  background-color: white;
+}
+
+/* HomeContent */
+
+.image-container {
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.header-text-center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.header-image {
+  width: 100%;
 }
