@@ -5,39 +5,27 @@ class Posts extends Component {
     super(props);
 
     this.state = {
-      products: [],
+      posts: [],
       dataRoute: "http://13.236.237.115/wp-json/wp/v2/posts"
     };
   }
 
   render() {
+    const { posts } = this.state;
+
+    console.log(posts);
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>A React & Snipcart powered e-commerce!</h2>
+      <div>
+        <div>
+          <h2>Posts Barbara</h2>
         </div>
 
-        <div className="products">
-          {this.state.products.map(product => (
-            <div className="product" key={`product-${product.id}}`}>
-              <img
-                src={product.image}
-                alt={product.name}
-                className="product-image"
-              />
-              <p>{product.name}</p>
-
-              <button
-                className="snipcart-add-item"
-                data-item-name={product.name}
-                data-item-id={product.id}
-                data-item-image={product.image}
-                data-item-description={product.description}
-                data-item-url={`${this.state.dataRoute}/${product.id}`}
-                data-item-price={product.price}
-              >
-                Buy it for {product.price} $
-              </button>
+        <div className="posts">
+          {posts.map(post => (
+            <div className="post" key={`post-${post.id}}`}>
+              <p>{post.name}</p>
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
           ))}
         </div>
@@ -48,20 +36,21 @@ class Posts extends Component {
   componentDidMount() {
     fetch(this.state.dataRoute)
       .then(res => res.json())
-      .then(products =>
+      .then(posts =>
         this.setState((prevState, props) => {
-          return { products: products.map(this.mapProduct) };
+          return { posts: posts.map(this.mappost) };
         })
       );
   }
 
-  mapProduct(product) {
+  mappost(post) {
     return {
-      id: product.id,
-      price: product.price,
-      image: product.image,
-      name: product.title.rendered,
-      description: product.description
+      id: post.id,
+      price: post.price,
+      image: post.image,
+      name: post.title.rendered,
+      content: post.content.rendered,
+      description: post.description
     };
   }
 }
