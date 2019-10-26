@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.header-text {
+  font-family: $fontTwo;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.header-text-center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.header-image {
+  width: 100%;
+}
