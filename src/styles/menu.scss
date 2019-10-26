@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.menu {
+  background-color: white;
+  display: flex;
+  align-content: space-around;
+  align-items: center;
+  font-family: $fontOneRegular;
+  font-size: 20px;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.menu a {
+  color: $black;
+}
+
+.menu-logo-asl {
+  height: 90px;
+  margin-left: 30px;
+  width: 90px;
+}
+
+.menu-logo-aut {
+  position: fixed;
+  height: 100px;
+  right: 30px;
+  top: 0;
+}

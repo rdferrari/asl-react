@@ -4,9 +4,15 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <div className="menu">
+      <div>
+        <img className="menu-logo-asl" src="/images/logo-asl.png" />
+      </div>
+
       <ul>
         <li>
-          <Link to="/">Art Science Lab</Link>
+          <Link className="menu-link" to="/">
+            Art Science Lab
+          </Link>
         </li>
         <li>
           <Link to="/our-vision">Our Vision</Link>
@@ -27,6 +33,10 @@ const Menu = () => {
           <Link to="/partners">Partners</Link>
         </li>
       </ul>
+
+      <div>
+        <img className="menu-logo-aut" src="/images/logo-aut.png" />
+      </div>
     </div>
   );
 };
