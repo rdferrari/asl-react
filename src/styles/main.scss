@@ -1,47 +1,25 @@
-/* fonts */
-
-@font-face {
-  font-family: karla-bold;
-  src: url("/fonts/Karla-Bold.ttf");
-}
-
-@font-face {
-  font-family: karla-bold-italic;
-  src: url("/fonts/Karla-BoldIItalic.ttf");
-}
-
-@font-face {
-  font-family: karla-italic;
-  src: url("/fonts/Karla-Italic.ttf");
-}
-
-@font-face {
-  font-family: karla-regular;
-  src: url("/fonts/Karla-Regular.ttf");
-}
-
 /* general */
+@import "./variables.scss";
 
 body {
   margin: 0;
-  font-weight: 100;
 }
 
 h1 {
   color: white;
-  font-family: karla-bold;
+  font-family: $fontOneBold;
   font-size: 70px;
 }
 
 h2 {
   color: white;
-  font-family: karla-bold;
+  font-family: $fontOneBold;
   font-size: 60px;
 }
 
 h3 {
   color: white;
-  font-family: karla-bold;
+  font-family: $fontOneBold;
   font-size: 60px;
 }
 

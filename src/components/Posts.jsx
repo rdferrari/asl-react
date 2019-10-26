@@ -6,8 +6,7 @@ class Posts extends Component {
 
     this.state = {
       products: [],
-      dataRoute:
-        "https://snipcart-wordpress-json-api.herokuapp.com/wp-json/wp/v2/posts"
+      dataRoute: "http://13.236.237.115/wp-json/wp/v2/posts"
     };
   }
 
