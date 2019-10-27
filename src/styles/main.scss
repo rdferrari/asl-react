@@ -8,7 +8,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: $fontOneBold;
+  font-family: $primaryBold;
 }
 
 a {
@@ -20,21 +20,23 @@ a {
   flex-direction: column;
 }
 
-.button-home {
+.button-big {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid $primary;
   font-family: karla-bold;
   font-size: 25px;
   padding: 15px 25px;
 }
 
+.button-big a {
+  color: $primary;
+}
+
 .footer {
   background-color: black;
-  color: white;
-  font-family: karla-regular;
-  font-size: 20px;
-  height: 100px;
-  margin-top: -30px;
+  height: 130px;
+  margin-top: -10px;
+  padding-top: 30px;
   width: 100%;
 }
 
@@ -42,9 +44,13 @@ a {
   position: absolute;
   top: 100px;
   z-index: 1;
-  background-color: white;
+  background-color: $primary;
 }
 
 .image-container {
   position: relative;
+}
+
+.full-image {
+  width: 100%;
 }

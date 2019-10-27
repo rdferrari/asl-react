@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Menu />
+        <Menu logo="/images/logo-asl.png" menu="menu" />
         <div className="components">
           <Switch>
             <Route exact path="/">
@@ -27,7 +27,7 @@ const App = () => {
             </Route>
           </Switch>
           <div className="footer">
-            <p>Art Science Lab | Contact</p>
+            <Menu logo="/images/logo-asl-footer.png" menu="menu-footer" />
           </div>
         </div>
       </div>

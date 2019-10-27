@@ -1,19 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = () => {
+const Menu = ({ logo, menu }) => {
   return (
-    <div className="menu">
+    <div className={menu}>
       <div>
-        <img className="menu-logo-asl" src="/images/logo-asl.png" />
+        <Link to="/">
+          <img className="menu-logo-asl" src={logo} />
+        </Link>
       </div>
 
       <ul>
-        <li>
-          <Link className="menu-link" to="/">
-            Art Science Lab
-          </Link>
-        </li>
         <li>
           <Link to="/our-vision">Our Vision</Link>
         </li>
