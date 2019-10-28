@@ -1,0 +1,64 @@
+/* general */
+@import "./variables.scss";
+
+.people-container {
+  background-color: $secondary;
+  color: $primary;
+  position: relative;
+  width: 100%;
+}
+
+.person-container {
+  position: relative;
+}
+
+.people-image {
+  position: relative;
+  width: 200px;
+}
+
+.people-name {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  font-family: $primaryBold;
+  font-size: 30px;
+}
+
+.key-people-row-container {
+  display: flex;
+}
+
+.key-people-container {
+  position: relative;
+}
+
+.key-people-image {
+  position: relative;
+  margin-right: 100px;
+  width: 400px;
+}
+
+.key-people-texts {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 80%;
+  text-align: center;
+}
+
+.key-people-name {
+  font-family: $primaryBold;
+  font-size: 30px;
+}
+
+.key-people-position {
+  font-family: $primaryRegular;
+  font-size: 20px;
+}
+
+.content-group-people {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
