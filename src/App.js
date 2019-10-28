@@ -15,7 +15,7 @@ import People from "./components/People";
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Menu logo="/images/logo-asl.png" menu="menu" />
         <div className="components">
@@ -33,9 +33,9 @@ const App = () => {
             <Route exact path="/labs">
               <Labs />
             </Route>
-            <HashRouter exact path="/posts">
+            <Route exact path="/posts">
               <Posts />
-            </HashRouter>
+            </Route>
             <Route exact path="/people">
               <People />
             </Route>
@@ -45,7 +45,7 @@ const App = () => {
           </div>
         </div>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
