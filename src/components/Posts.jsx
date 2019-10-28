@@ -17,15 +17,29 @@ class Posts extends Component {
 
     return (
       <div>
-        <div>
-          <h2>Posts Barbara</h2>
-        </div>
+        <header className="image-container">
+          <div className="home-header-text">
+            <h1 className="tagline">Title page / Title page</h1>
+            <h2 className="subtagline">Title page</h2>
+            <p className="home-tagline_sub">
+              Ko te taiao ko au, Ko au te taiao.
+            </p>
+            <p className="home-tagline_sub_italic">
+              The enviroment is me, I am the enviroment.
+            </p>
+          </div>
+
+          <img className="full-image" src="/images/home-lab.jpg" />
+        </header>
 
         <div className="posts">
           {posts.map(post => (
             <div className="post" key={`post-${post.id}}`}>
-              <p>{post.name}</p>
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              <h2 className="post-title">{post.name}</h2>
+              <div
+                className="content-text"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
             </div>
           ))}
         </div>
