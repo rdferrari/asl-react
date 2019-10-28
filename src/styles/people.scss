@@ -4,6 +4,7 @@
 .people-container {
   background-color: $secondary;
   color: $primary;
+  margin-bottom: 10px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +16,10 @@
 
 .people-image {
   width: 250px;
+}
+
+.people-image_work {
+  width: 500px;
 }
 
 .people-name {

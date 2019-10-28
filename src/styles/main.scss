@@ -137,7 +137,8 @@ a {
 
 .intro-black {
   font-family: $fontSecondary;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 400;
   margin-bottom: 60px;
 }
 
@@ -151,4 +152,8 @@ a {
 
 .image-logo {
   width: 200px;
+}
+
+.header-text-container {
+  width: 600px;
 }

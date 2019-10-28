@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Crude - Video Installation",
+    "image": "/images/work/tyres.png"
+  },
+  {
+    "id": 2,
+    "name": "O Tū Kapua (What Clouds See)",
+    "image": "/images/work/tree.png"
+  },
+  {
+    "id": 3,
+    "name": "Photogrammetry Hillary Hut, Antarctica",
+    "image": "/images/work/lab.png"
+  },
+  {
+    "id": 4,
+    "name": "AUT Marae Point Cloud",
+    "image": "/images/work/maori.png"
+  }
+]
