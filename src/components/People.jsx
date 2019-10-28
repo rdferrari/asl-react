@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import LabsList from "../data/labs.json";
+
 // import PeopleList from "../data/people.json";
 
 const KeyPeople = ({ name, position, image }) => {
