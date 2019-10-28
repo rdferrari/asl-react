@@ -6,7 +6,7 @@ const HomeContent = ({ title, link, image }) => {
     <div className="image-container">
       <div className="home-text-container">
         <h3 className="home-text-button">{title}</h3>
-        <button className="button-big">
+        <button className="button-one bt-large">
           <Link to={link}>Learn more</Link>
         </button>
       </div>

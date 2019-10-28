@@ -20,20 +20,28 @@ a {
   flex-direction: column;
 }
 
-.button-big {
+.button-one {
   background-color: transparent;
-  border: 2px solid $primary;
+  border: 1px solid $primary;
   font-family: karla-bold;
-  font-size: 25px;
   padding: 15px 25px;
 }
 
-.button-big a {
+.button-one a {
   color: $primary;
+}
+
+.bt-large {
+  font-size: 25px;
+}
+
+.bt-small {
+  font-size: 20px;
 }
 
 .footer {
   background-color: black;
+  border-top: 1px solid $primary;
   height: 130px;
   margin-top: -10px;
   padding-top: 30px;
@@ -53,4 +61,89 @@ a {
 
 .full-image {
   width: 100%;
+}
+
+.tagline {
+  color: $primary;
+  font-size: 35px;
+}
+
+.subtagline {
+  color: $primary;
+  font-size: 60px;
+}
+
+.content-container {
+  margin: auto;
+  display: flex;
+  width: 70%;
+  padding: 100px 20px;
+}
+
+.content-container-left {
+  padding-right: 50px;
+  width: 50%;
+}
+
+.content-title {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: 25px;
+}
+
+.content-title-eng {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.content-text {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: 20px;
+}
+
+.content-image {
+  margin: 35px;
+}
+
+.content-container-full {
+  background-color: $secondary;
+  color: $primary;
+}
+
+.content-container-black {
+  margin: auto;
+  width: 70%;
+  padding-top: 100px;
+}
+
+.content-group-black {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.content-black {
+  margin-bottom: 50px;
+  padding-right: 80px;
+}
+
+.title-black {
+  font-family: $primaryBold;
+  font-size: 50px;
+}
+
+.intro-black {
+  font-family: $fontSecondary;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.images-black {
+  padding-top: 50px;
+}
+
+.image-right {
+  width: 450px;
 }
