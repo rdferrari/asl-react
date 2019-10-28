@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter
+} from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
@@ -28,9 +33,9 @@ const App = () => {
             <Route exact path="/labs">
               <Labs />
             </Route>
-            <Route exact path="/posts">
+            <HashRouter exact path="/posts">
               <Posts />
-            </Route>
+            </HashRouter>
             <Route exact path="/people">
               <People />
             </Route>
