@@ -5,6 +5,8 @@
   background-color: $secondary;
   color: $primary;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .person-container {
@@ -13,15 +15,15 @@
 
 .people-image {
   position: relative;
-  width: 200px;
+  width: 250px;
 }
 
 .people-name {
   position: absolute;
-  left: 50px;
-  top: 5px;
+  left: 35%;
+  top: 50%;
   font-family: $primaryBold;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .key-people-row-container {

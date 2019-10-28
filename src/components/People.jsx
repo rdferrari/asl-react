@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import LabsList from "../data/labs.json";
-
-// import PeopleList from "../data/people.json";
+import PeopleList from "../data/people.json";
 
 const KeyPeople = ({ name, position, image }) => {
   return (
@@ -52,12 +49,9 @@ const People = () => {
         <div className="content-group-people">
           <h2 className="title-black">People (Alphabetical)</h2>
           <div className="people-container">
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
-            <Person name="Ali Taheri" image="/images/image-key-people.png" />
+            {PeopleList.map(person => (
+              <Person key={person.id} name={person.name} image={person.image} />
+            ))}
           </div>
         </div>
       </div>
