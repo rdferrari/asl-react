@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import renderHTML from "react-render-html";
 
 class Posts extends Component {
   constructor(props) {
@@ -36,10 +37,7 @@ class Posts extends Component {
           {posts.map(post => (
             <div className="post" key={`post-${post.id}}`}>
               <h2 className="post-title">{post.name}</h2>
-              <div
-                className="content-text"
-                dangerouslySetInnerHTML={{ __html: post.content }}
-              />
+              <div className="content-text">{renderHTML(post.content)}</div>
             </div>
           ))}
         </div>
@@ -60,11 +58,8 @@ class Posts extends Component {
   mappost(post) {
     return {
       id: post.id,
-      price: post.price,
-      image: post.image,
       name: post.title.rendered,
-      content: post.content.rendered,
-      description: post.description
+      content: post.content.rendered
     };
   }
 }
