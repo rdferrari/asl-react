@@ -36,12 +36,12 @@ const People = () => {
             <KeyPeople
               name="Barbara Bollard"
               position="Director"
-              image="/images/image-key-people.png"
+              image="/images/people/barbara.png"
             />
             <KeyPeople
-              name="Barbara Bollard"
-              position="Director"
-              image="/images/image-key-people.png"
+              name="Pare Keiha"
+              position="Chair"
+              image="/images/people/pare.png"
             />
           </div>
         </header>

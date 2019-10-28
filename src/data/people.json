@@ -2,26 +2,101 @@
   {
     "id": 1,
     "name": "Ali Taheri",
-    "image": "/images/image-key-people.png"
+    "image": "/images/people/ali.png"
   },
   {
     "id": 2,
-    "name": "Ali Taheri 2",
-    "image": "/images/image-key-people.png"
+    "name": "Andrew Denton",
+    "image": "/images/people/andrew.png"
   },
   {
     "id": 3,
-    "name": "Ali Taheri 3",
-    "image": "/images/image-key-people.png"
+    "name": "Ashray Doshi",
+    "image": "/images/people/avatar.png"
   },
   {
     "id": 4,
-    "name": "Ali Taheri 4",
-    "image": "/images/image-key-people.png"
+    "name": "Claudio Aguayo",
+    "image": "/images/people/claudio.png"
   },
   {
     "id": 5,
-    "name": "Ali Taheri 5",
-    "image": "/images/image-key-people.png"
+    "name": "Ethan Harris",
+    "image": "/images/people/avatar.png"
+  },
+  {
+    "id": 6,
+    "name": "Gregory Bennett",
+    "image": "/images/people/gregory.png"
+  },
+  {
+    "id": 7,
+    "name": "Hohepa Spooner",
+    "image": "/images/people/hohepa.png"
+  },
+  {
+    "id": 8,
+    "name": "Jan Kruse",
+    "image": "/images/people/jan.png"
+  },
+  {
+    "id": 9,
+    "name": "James Smith",
+    "image": "/images/people/james.png"
+  },
+  {
+    "id": 10,
+    "name": "Janine Randerson",
+    "image": "/images/people/janine.png"
+  },
+  {
+    "id": 11,
+    "name": "Joseph Michael",
+    "image": "/images/people/joseph.png"
+  },
+  {
+    "id": 12,
+    "name": "Josh Wagstaff",
+    "image": "/images/people/avatar.png"
+  },
+  {
+    "id": 13,
+    "name": "Katarina Markovic",
+    "image": "/images/people/katarina.png"
+  },
+  {
+    "id": 14,
+    "name": "Lee Jackson",
+    "image": "/images/people/lee.png"
+  },
+  {
+    "id": 15,
+    "name": "Len Gillman",
+    "image": "/images/people/len.png"
+  },
+  {
+    "id": 16,
+    "name": "Maree Sheehan",
+    "image": "/images/people/sheehan.png"
+  },
+  {
+    "id": 17,
+    "name": "Parisa Moradi",
+    "image": "/images/people/parisa.png"
+  },
+  {
+    "id": 18,
+    "name": "Quentin Quaadgras",
+    "image": "/images/people/avatar.png"
+  },
+  {
+    "id": 19,
+    "name": "Robert Pouwhare",
+    "image": "/images/people/robert.png"
+  },
+  {
+    "id": 20,
+    "name": "Sue Jowsey",
+    "image": "/images/people/susan.png"
   }
 ]

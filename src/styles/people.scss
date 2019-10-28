@@ -10,52 +10,45 @@
 }
 
 .person-container {
-  position: relative;
+  margin: 20px;
 }
 
 .people-image {
-  position: relative;
   width: 250px;
 }
 
 .people-name {
-  position: absolute;
-  left: 35%;
-  top: 50%;
   font-family: $primaryBold;
-  font-size: 23px;
+  font-size: 15px;
 }
 
 .key-people-row-container {
+  margin: auto;
+  width: 80%;
   display: flex;
 }
 
 .key-people-container {
-  position: relative;
+  margin-right: 100px;
 }
 
 .key-people-image {
-  position: relative;
-  margin-right: 100px;
-  width: 400px;
 }
 
 .key-people-texts {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  width: 80%;
+  margin: auto;
+  width: 50%;
   text-align: center;
 }
 
 .key-people-name {
   font-family: $primaryBold;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .key-people-position {
   font-family: $primaryRegular;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .content-group-people {
