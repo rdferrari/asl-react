@@ -58,7 +58,7 @@ const Home = () => {
       <HomeContent
         title="Partners"
         link="./partners"
-        image="/images/home-sand.jpg"
+        image="/images/home-seed.jpg"
       />
     </div>
   );
