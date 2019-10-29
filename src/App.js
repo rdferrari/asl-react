@@ -18,7 +18,11 @@ const App = () => {
   return (
     <HashRouter>
       <div>
-        <Menu logo="/images/logo-asl.png" menu="menu" />
+        <Menu
+          logo="/images/logo-asl.png"
+          menu="menu"
+          contact="menu-contact-none"
+        />
         <div className="components">
           <Switch>
             <Route exact path="/">
@@ -45,7 +49,11 @@ const App = () => {
             </Route>
           </Switch>
           <div className="footer">
-            <Menu logo="/images/logo-asl-footer.png" menu="menu-footer" />
+            <Menu
+              logo="/images/logo-asl-footer.png"
+              menu="menu-footer"
+              contact="menu-contact-container"
+            />
           </div>
         </div>
       </div>

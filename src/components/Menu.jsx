@@ -1,13 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = ({ logo, menu }) => {
+const Menu = ({ logo, menu, contact }) => {
   return (
     <div className={menu}>
       <div>
         <Link to="/">
           <img className="menu-logo-asl" src={logo} />
         </Link>
+      </div>
+
+      <div className={contact}>
+        <div>
+          <p className="menu-contact-title">Contact Us</p>
+        </div>
+        <div className="menu-contact-flex">
+          <img className="menu-contact-image" src="/images/contact/home.png" />
+          <p className="menu-contact-text">
+            55 Wellesley Street East, Auckland Central
+          </p>
+        </div>
+        <div className="menu-contact-flex">
+          <img className="menu-contact-image" src="/images/contact/phone.png" />
+          <p className="menu-contact-text">+64 9 921 9999</p>
+        </div>
+        <div className="menu-contact-flex">
+          <img className="menu-contact-image" src="/images/contact/email.png" />
+          <p className="menu-contact-text">applab@aut.ac.nz</p>
+        </div>
       </div>
 
       <ul>

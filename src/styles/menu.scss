@@ -53,3 +53,36 @@
   right: 30px;
   top: 0;
 }
+
+.menu-contact-container {
+  border-left: 1px solid $primary;
+  color: $primary;
+  font-family: $primaryRegular;
+  margin: 0 0 25px 70px;
+  padding-left: 70px;
+}
+
+.menu-contact-flex {
+  display: flex;
+  width: 200px;
+}
+
+.menu-contact-title {
+  font-size: 20px;
+}
+
+.menu-contact-text {
+  font-size: 12px;
+  align-self: center;
+}
+
+.menu-contact-image {
+  align-self: center;
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.menu-contact-none {
+  display: none;
+}
