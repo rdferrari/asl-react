@@ -5,6 +5,9 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
+import ScrollToTop from "react-router-scroll-top";
+
+// components
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
@@ -26,31 +29,33 @@ const App = () => {
         />
         <div className="components">
           <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/our-vision">
-              <OurVision />
-            </Route>
-            <Route exact path="/stories">
-              <Stories />
-            </Route>
+            <ScrollToTop>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/our-vision">
+                <OurVision />
+              </Route>
+              <Route exact path="/stories">
+                <Stories />
+              </Route>
 
-            <Route exact path="/labs">
-              <Labs />
-            </Route>
-            <Route exact path="/posts">
-              <Posts />
-            </Route>
-            <Route exact path="/people">
-              <People />
-            </Route>
-            <Route exact path="/our-work">
-              <OurWork />
-            </Route>
-            <Route exact path="/partners">
-              <Partners />
-            </Route>
+              <Route exact path="/labs">
+                <Labs />
+              </Route>
+              <Route exact path="/posts">
+                <Posts />
+              </Route>
+              <Route exact path="/people">
+                <People />
+              </Route>
+              <Route exact path="/our-work">
+                <OurWork />
+              </Route>
+              <Route exact path="/partners">
+                <Partners />
+              </Route>
+            </ScrollToTop>
           </Switch>
           <div className="footer">
             <Menu
