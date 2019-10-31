@@ -15,6 +15,7 @@
 }
 
 .partners-map-image {
+  cursor: pointer;
   height: 400px;
 }
 
@@ -34,6 +35,7 @@
 }
 
 .partners-europe-detail-image {
+  cursor: pointer;
   position: absolute;
   left: 430px;
   top: 1%;
@@ -42,10 +44,36 @@
 }
 
 .partners-bt-invisible {
+  cursor: pointer;
   position: absolute;
   left: 470px;
   top: 30%;
   background-color: transparent;
   height: 100px;
   width: 100px;
+}
+
+.partners-back-bt {
+  cursor: pointer;
+  font-family: $primaryRegular;
+  font-size: 15px;
+}
+
+.partners-bt-invisible-nz {
+  cursor: pointer;
+  position: absolute;
+  left: 980px;
+  top: 17%;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+}
+
+.partners-nz-detail-image {
+  cursor: pointer;
+  position: absolute;
+  left: 800px;
+  top: 1%;
+  height: 300px;
+  width: auto;
 }

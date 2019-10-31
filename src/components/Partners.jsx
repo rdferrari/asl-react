@@ -26,7 +26,15 @@ class Partners extends Component {
     const { oceania } = this.state;
 
     this.setState({
-      oceania: oceania
+      oceania: !oceania
+    });
+  };
+
+  toogleNz = () => {
+    const { nz } = this.state;
+
+    this.setState({
+      nz: !nz
     });
   };
 
@@ -70,7 +78,9 @@ class Partners extends Component {
         <div className="content-container-black">
           <header>
             <h1>International Partners / Hoa Taiao</h1>
-            <p onClick={this.toogleWorld}>Back - Partners / E Hoa</p>
+            <p onClick={this.toogleWorld} className="partners-back-bt">
+              Back - Partners / E Hoa
+            </p>
           </header>
           <div className="partners-map-detail-container">
             {europe === true ? (
@@ -96,21 +106,55 @@ class Partners extends Component {
     );
   }
 
-  _europe() {
+  _oceania() {
+    const { nz } = this.state;
+
     return (
-      <div className="">
-        <img
-          className="partners-map-detail-image"
-          src="/images/maps/world-detail.png"
-        />
+      <div className="partners-container">
+        <div className="content-container-black">
+          <header>
+            <h1>
+              Partners in Australia and NZ / Hoa i roto o Ahitereiria me
+              Aotearoa
+            </h1>
+            <p onClick={this.toogleOceania} className="partners-back-bt">
+              Back - Partners / E Hoa
+            </p>
+          </header>
+          <div className="partners-map-detail-container">
+            {nz === true ? (
+              <img
+                onClick={this.toogleNz}
+                className="partners-nz-detail-image"
+                src="/images/maps/nz-detail.png"
+              />
+            ) : (
+              <div
+                onClick={this.toogleNz}
+                className="partners-bt-invisible-nz"
+              ></div>
+            )}
+
+            <img
+              className="partners-map-detail-image"
+              src="/images/maps/au-nz-detail.png"
+            />
+          </div>
+        </div>
       </div>
     );
   }
 
   render() {
-    const { world } = this.state;
+    const { world, oceania } = this.state;
 
-    return world == true ? this._world() : this._maps();
+    if (world === true) {
+      return this._world();
+    } else if (oceania === true) {
+      return this._oceania();
+    } else {
+      return this._maps();
+    }
   }
 }
 
