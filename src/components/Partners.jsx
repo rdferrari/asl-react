@@ -7,8 +7,26 @@ class Partners extends Component {
   }
 
   toogleEurope = () => {
+    const { europe } = this.state;
+
     this.setState({
-      europe: !this.state.europe
+      europe: !europe
+    });
+  };
+
+  toogleWorld = () => {
+    const { world } = this.state;
+
+    this.setState({
+      world: !world
+    });
+  };
+
+  toogleOceania = () => {
+    const { oceania } = this.state;
+
+    this.setState({
+      oceania: oceania
     });
   };
 
@@ -17,11 +35,12 @@ class Partners extends Component {
       <div className="partners-container">
         <div className="content-container-black">
           <header>
-            <h1>Our Work / Mahi</h1>
+            <h1>Partners / E Hoa</h1>
           </header>
           <div className="partners-maps-container">
             <div>
               <img
+                onClick={this.toogleOceania}
                 className="partners-map-image"
                 src="/images/maps/au-nz.png"
               />
@@ -31,6 +50,7 @@ class Partners extends Component {
             </div>
             <div>
               <img
+                onClick={this.toogleWorld}
                 className="partners-map-image"
                 src="/images/maps/world.png"
               />
@@ -50,6 +70,7 @@ class Partners extends Component {
         <div className="content-container-black">
           <header>
             <h1>International Partners / Hoa Taiao</h1>
+            <p onClick={this.toogleWorld}>Back - Partners / E Hoa</p>
           </header>
           <div className="partners-map-detail-container">
             {europe === true ? (
@@ -87,7 +108,9 @@ class Partners extends Component {
   }
 
   render() {
-    return this._world();
+    const { world } = this.state;
+
+    return world == true ? this._world() : this._maps();
   }
 }
 
