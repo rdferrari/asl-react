@@ -13,6 +13,7 @@ import Labs from "./components/Labs";
 import Posts from "./components/Posts";
 import People from "./components/People";
 import OurWork from "./components/OurWork";
+import Partners from "./components/Partners";
 
 const App = () => {
   return (
@@ -46,6 +47,9 @@ const App = () => {
             </Route>
             <Route exact path="/our-work">
               <OurWork />
+            </Route>
+            <Route exact path="/partners">
+              <Partners />
             </Route>
           </Switch>
           <div className="footer">

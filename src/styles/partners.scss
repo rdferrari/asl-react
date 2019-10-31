@@ -1,0 +1,25 @@
+/* general */
+@import "./variables.scss";
+
+.partners-container {
+  background-color: $primary;
+  border-top: 1px solid $secondary;
+  color: $secondary;
+  margin-bottom: 200px;
+  position: relative;
+  display: flex;
+}
+
+.partners-maps-container {
+  display: flex;
+}
+
+.partners-map-image {
+  height: 400px;
+}
+
+.partners-map-text {
+  font-family: $primaryRegular;
+  font-size: 15px;
+  text-align: center;
+}
