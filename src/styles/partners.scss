@@ -23,3 +23,29 @@
   font-size: 15px;
   text-align: center;
 }
+
+.partners-map-detail-container {
+  position: relative;
+}
+
+.partners-map-detail-image {
+  width: 1200px;
+  height: auto;
+}
+
+.partners-europe-detail-image {
+  position: absolute;
+  left: 430px;
+  top: 1%;
+  height: 300px;
+  width: auto;
+}
+
+.partners-bt-invisible {
+  position: absolute;
+  left: 470px;
+  top: 30%;
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+}
