@@ -24,15 +24,16 @@ const OurVision = () => {
             As man disappears from sight, the land remains.
           </p>
           <p className="content-text">
-            The New Zealand Centre for ArtScience Research at AUT expands the
-            horizons of Art and Science by means of transdisciplinary research,
-            communicating the imperative of preserving Earth’s threatened
-            ecosystems, through ethical discourse and scholarly practice.
-            Researchers in the Centre explore ways of creating new methods of
-            inquiry in a supportive environment that seeks to advance
-            understanding of our living planet through diverse yet complementary
-            knowledge strands. The Centre explores a sense of place and
-            belonging in Aotearoa, creating a platform for a positive
+            Whatungarongaro te tangata toitū te whenua. As man disappears from
+            sight, the land remains. The New Zealand Art Science Lab at AUT
+            expands the horizons of Art and Science by means of
+            transdisciplinary research, communicating the imperative of
+            preserving Earth’s threatened ecosystems, through ethical discourse
+            and scholarly practice. Researchers in the Lab explore ways of
+            creating new methods of inquiry in a supportive environment that
+            seeks to advance understanding of our living planet through diverse
+            yet complementary knowledge strands. The Lab explores a sense of
+            place and belonging in Aotearoa, creating a platform for a positive
             environmental future vision. This vision takes into account the
             importance of our complex ecosystems, acknowledges human and
             non-human connection and interdependence, and recalibrates notions
@@ -48,6 +49,10 @@ const OurVision = () => {
           <img
             className="full-image content-image"
             src="/images/our-vision-tree.png"
+          />
+          <img
+            className="full-image content-image"
+            src="/images/our-vision-people.png"
           />
         </div>
       </div>
