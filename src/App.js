@@ -18,6 +18,8 @@ import People from "./components/People";
 import OurWork from "./components/OurWork";
 import Partners from "./components/Partners";
 import StoryDrone from "./components/story/StoryDrone";
+import StoryRemote from "./components/story/StoryRemote";
+import StoryRaised from "./components/story/StoryRaised";
 
 const App = () => {
   return (
@@ -56,8 +58,14 @@ const App = () => {
               <Route exact path="/partners">
                 <Partners />
               </Route>
-              <Route exact path="/story">
+              <Route exact path="/stories/drone-of-conservation">
                 <StoryDrone />
+              </Route>
+              <Route exact path="/stories/remote-sensing">
+                <StoryRemote />
+              </Route>
+              <Route exact path="/stories/raised-up-sky">
+                <StoryRaised />
               </Route>
             </ScrollToTop>
           </Switch>

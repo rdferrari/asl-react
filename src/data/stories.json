@@ -5,14 +5,16 @@
     "intro": "Associate Professor Barbara Bollard, together with UAV engineer Ashray Doshi and Biogeographer Len Gillman, led three expeditions to Antarctica. The team used custom built drones to map vegetation (mainly mosses and lichens) with cameras modified to capture different electro-magnetic signatures reflected from the unique plants.",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "image_one": "/images/stories-1b.png",
-    "image_two": "/images/stories-2.png"
+    "image_two": "/images/stories-2.png",
+    "link": "/stories/drone-of-conservation"
   },
   {
     "id": 2,
     "title": "Remote Sensing",
     "intro": "The DroneLab has been part of a team using drones for stocktakes of “extremophile” organisms living in Africa’s Namib Desert, where surface temperatures reached 68oC. Their research, which turned out some innovative new approaches to spatial analysis, caught the attention of scientists working on a Search for Extraterrestrial Intelligence (SETI) Institute programme.",
     "image_one": "/images/stories-3.png",
-    "image_two": "/images/stories-4.png"
+    "image_two": "/images/stories-4.png",
+    "link": "/stories/remote-sensing"
   },
   {
     "id": 3,
@@ -20,6 +22,7 @@
     "intro": "As part of AUT’s artist residency 2019, Joseph Michael will create the first ever life-size digital reconstruction of New Zealand’s largest known living kauri tree, Tāne Mahuta, located in the Waipoua Forest in the Northland region. The project crosses traditional boundaries between Science and Art, allowing the interplay of information, data and scientific tools to inform the Artwork. In turn the Artwork is helping to inform critical forest management and forest ecology decisions, as well as providing a digital archive of these significant cultural and historical heritage sites.",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "image_one": "/images/stories-5.png",
-    "image_two": "/images/stories-6.png"
+    "image_two": "/images/stories-6.png",
+    "link": "/stories/raised-up-sky"
   }
 ]

@@ -16,7 +16,7 @@ const Stories = () => {
               <h2 className="title-black">{story.title}</h2>
               <p className="intro-black">{story.intro}</p>
               <button className="button-one bt-small">
-                <Link to="/">See more</Link>
+                <Link to={story.link}>See more</Link>
               </button>
             </div>
             <div className="images-black">

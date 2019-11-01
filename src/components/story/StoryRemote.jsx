@@ -3,7 +3,7 @@ import News from "./News";
 import ImageBottom from "./ImageBottom";
 import Story from "./Story";
 
-const StoryDrone = () => {
+const StoryRemote = () => {
   return (
     <div>
       <Story
@@ -66,4 +66,4 @@ const StoryDrone = () => {
   );
 };
 
-export default StoryDrone;
+export default StoryRemote;
