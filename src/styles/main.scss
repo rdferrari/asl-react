@@ -27,8 +27,19 @@ a {
   padding: 15px 25px;
 }
 
+.button-two {
+  background-color: transparent;
+  border: 1px solid $secondary;
+  font-family: karla-bold;
+  padding: 15px 25px;
+}
+
 .button-one a {
   color: $primary;
+}
+
+.button-two a {
+  color: $secondary;
 }
 
 .bt-large {

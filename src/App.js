@@ -17,6 +17,7 @@ import Posts from "./components/Posts";
 import People from "./components/People";
 import OurWork from "./components/OurWork";
 import Partners from "./components/Partners";
+import Story from "./components/Story";
 
 const App = () => {
   return (
@@ -54,6 +55,9 @@ const App = () => {
               </Route>
               <Route exact path="/partners">
                 <Partners />
+              </Route>
+              <Route exact path="/story">
+                <Story />
               </Route>
             </ScrollToTop>
           </Switch>
