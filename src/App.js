@@ -20,6 +20,12 @@ import Partners from "./components/Partners";
 import StoryDrone from "./components/story/StoryDrone";
 import StoryRemote from "./components/story/StoryRemote";
 import StoryRaised from "./components/story/StoryRaised";
+import WorkAirBox from "./components/story/WorkAirBox";
+
+import WorkCloud from "./components/story/WorkCloud";
+import WorkAntartica from "./components/story/WorkAntartica";
+import WorkMarae from "./components/story/WorkMarae";
+import WorkCrude from "./components/story/WorkCrude";
 
 const App = () => {
   return (
@@ -66,6 +72,25 @@ const App = () => {
               </Route>
               <Route exact path="/stories/raised-up-sky">
                 <StoryRaised />
+              </Route>
+              <Route exact path="/work/airbox">
+                <WorkAirBox />
+              </Route>
+
+              <Route exact path="/work/clouds">
+                <WorkCloud />
+              </Route>
+
+              <Route exact path="/work/antartica">
+                <WorkAntartica />
+              </Route>
+
+              <Route exact path="/work/marae">
+                <WorkMarae />
+              </Route>
+
+              <Route exact path="/work/crude">
+                <WorkCrude />
               </Route>
             </ScrollToTop>
           </Switch>

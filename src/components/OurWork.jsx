@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import OurWorkList from "../data/our_work.json";
 
-const Work = ({ name, image }) => {
+const Work = ({ name, image, link }) => {
   return (
     <div className="person-container">
-      <img className="people-image_work" src={image} />
-      <div className="key-people-texts">
-        <p className="people-name">{name}</p>
-      </div>
+      <Link to={link}>
+        <img className="people-image_work" src={image} />
+        <div className="key-people-texts">
+          <p className="people-name">{name}</p>
+        </div>
+      </Link>
     </div>
   );
 };
@@ -36,7 +39,12 @@ const OurWork = () => {
         <div className="content-group-people">
           <div className="people-container">
             {OurWorkList.map(work => (
-              <Work key={work.id} name={work.name} image={work.image} />
+              <Work
+                key={work.id}
+                name={work.name}
+                image={work.image}
+                link={work.link}
+              />
             ))}
           </div>
         </div>
