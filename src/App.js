@@ -17,7 +17,7 @@ import Posts from "./components/Posts";
 import People from "./components/People";
 import OurWork from "./components/OurWork";
 import Partners from "./components/Partners";
-import Story from "./components/Story";
+import StoryDrone from "./components/story/StoryDrone";
 
 const App = () => {
   return (
@@ -57,7 +57,7 @@ const App = () => {
                 <Partners />
               </Route>
               <Route exact path="/story">
-                <Story />
+                <StoryDrone />
               </Route>
             </ScrollToTop>
           </Switch>

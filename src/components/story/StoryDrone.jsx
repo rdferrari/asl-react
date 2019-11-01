@@ -1,49 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import News from "./News";
+import ImageBottom from "./ImageBottom";
+import Story from "./Story";
 
-const News = ({ image, title, text, link }) => {
-  return (
-    <div className="story-container-flex">
-      <img className="story-image-news" src={image} />
-      <div className="story-news-content">
-        <h3 className="story-title-news">{title}</h3>
-        <p className="story-text-news">{text}</p>
-        <button className="button-two bt-small">
-          <Link to={link}>Read more</Link>
-        </button>
-      </div>
-    </div>
-  );
-};
-
-const ImageBottom = ({ image }) => {
-  return <img className="full-image story-image-fix" src={image} />;
-};
-
-const Story = () => {
+const StoryDrone = () => {
   return (
     <div>
-      <header className="image-container">
-        <div className="home-header-text">
-          <h1 className="story-tagline">Drones for Conservation</h1>
-          <p className="story-intro">
-            Associate Professor Barbara Bollard, together with UAV engineer
+      <Story
+        header="Drones for Conservation"
+        intro="Associate Professor Barbara Bollard, together with UAV engineer
             Ashray Doshi and Biogeographer Len Gillman, led three expeditions to
             Antarctica, where the team used custom built drones to map
             vegetation (mainly mosses and lichens) with cameras modified to
             capture electro-magnetic signatures reflected from the unique
-            plants.
-          </p>
-        </div>
-        <img
-          className="full-image"
-          src="/images/story-drone/drone-close-filter.jpg"
-        />
-      </header>
-      <div className="story-container">
-        <div className="story-container-flex">
-          <p className="story-intro-text">
-            The maps provided baseline data for follow-up surveys monitoring
+            plants."
+        imageHeader="/images/story-drone/drone-close-filter.jpg"
+        text="The maps provided baseline data for follow-up surveys monitoring
             changes to vegetation. The research is being used to understand
             human impacts and provide solutions that would help conserve
             Antarctic landforms at risk from climate change. There are limited
@@ -62,21 +34,14 @@ const Story = () => {
             grow and how they grow. More recently the team have provided time
             and expertise to map 3D models of the interior and exterior of the
             historic huts for VR experiences, so soon the public will be able to
-            experience some of Antarctica's human history.
-          </p>
-          <div>
-            <img
-              className="story-image-text"
-              src="/images/story-drone/drone-pilot.jpg"
-            />
-            <img
-              className="story-image-text"
-              src="/images/story-drone/team-photo-drones.jpg"
-            />
-          </div>
-        </div>
+            experience some of Antarctica's human history."
+        imageTextOne="/images/story-drone/drone-pilot.jpg"
+        imageTextTwo="/images/story-drone/team-photo-drones.jpg"
+      />
 
+      <div className="story-container">
         <h2 className="story-news-title">News Coverage / Purongo</h2>
+
         <News
           image="/images/story-drone/ted-barbara.jpg"
           title="Mapping by drone - Africa to Antartica"
@@ -103,4 +68,4 @@ const Story = () => {
   );
 };
 
-export default Story;
+export default StoryDrone;
