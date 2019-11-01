@@ -49,11 +49,24 @@ const StoryDrone = () => {
           link="/"
         />
         <News
-          image="/images/story-drone/ted-barbara.jpg"
-          title="Mapping by drone - Africa to Antartica"
-          text="While some drones are used to destroy, Barbara’s team uses them –
-          complete with military guidance technology – to map threatened
-          ecosystems in Africa, Australia and Antarctica."
+          image="/images/story-drone/antartida-top.jpg"
+          title="Stunning 3D Scott Base model created by drone"
+          text="New Zealand’s Antarctic outpost has been recreated in a stunning 3D model,
+          allowing people to view Scott Base from any aerial angle."
+          link="/"
+        />
+        <News
+          image="/images/story-drone/team-photo-drones.jpg"
+          title="Digital mapping of Antartica"
+          text="Professor Barbara Bollard-Breen uses drones to map 
+          the specially protected area around Scott Base in Antarctica."
+          link="/"
+        />
+        <News
+          image="/images/story-drone/drone.jpg"
+          title="Up, Up and Away"
+          text="When traditional technology was no longer able to answer the conservation questions AUT’s Dr Barbara Bollard-Breen was asking, she found a solution in drones. And other industries are seeing the potential too. 
+          Erin McKenzie investigates the benefits of having eyes in the sky."
           link="/"
         />
       </div>
