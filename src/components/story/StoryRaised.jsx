@@ -7,61 +7,24 @@ const StoryRaised = () => {
   return (
     <div>
       <Story
-        header="Drones for Conservation"
-        intro="Associate Professor Barbara Bollard, together with UAV engineer
-            Ashray Doshi and Biogeographer Len Gillman, led three expeditions to
-            Antarctica, where the team used custom built drones to map
-            vegetation (mainly mosses and lichens) with cameras modified to
-            capture electro-magnetic signatures reflected from the unique
-            plants."
-        imageHeader="/images/story-drone/drone-close-filter.jpg"
-        text="The maps provided baseline data for follow-up surveys monitoring
-            changes to vegetation. The research is being used to understand
-            human impacts and provide solutions that would help conserve
-            Antarctic landforms at risk from climate change. There are limited
-            resources to monitor the past and cumulative effects of humans, but
-            drones proved successful at working in conditions that are so
-            different, cold and extreme heat. They were able to map the
-            footprint of camping sites and walking trails, some of which are
-            several years old, and find artifacts from sites that date back to
-            1911 – all while creating high-resolution baseline maps of the areas
-            from the thousands of images captured by the drones. Many of the
-            projects the DroneLab have worked on in Antarctica have been turned
-            into virtual reality (VR) experiences, giving insights into
-            parameters that would not have been otherwise noticed. They are now
-            able to view areas in 3D and in a fully immersive environment
-            allowing them to investigate the relationships between where things
-            grow and how they grow. More recently the team have provided time
-            and expertise to map 3D models of the interior and exterior of the
-            historic huts for VR experiences, so soon the public will be able to
-            experience some of Antarctica's human history."
-        imageTextOne="/images/story-drone/drone-pilot.jpg"
-        imageTextTwo="/images/story-drone/team-photo-drones.jpg"
+        header="Raised up Sky"
+        intro="As part of AUT’s artist residency 2019, Joseph Michael will create the first ever life-size digital reconstruction of New Zealand’s largest known living kauri tree, Tāne Mahuta, located in the Waipoua Forest in the Northland region."
+        imageHeader="/images/story-raised/tane-header.jpg"
+        text="The project crosses traditional boundaries between Science and Art, allowing the interplay of information, data and scientific tools to inform the Artwork. In turn the Artwork is helping to inform critical forest management and forest ecology decisions, as well as providing a digital archive of these significant cultural and historical heritage sites. Mapping and recreating Tāne Mahuta and other significant Kauri trees of the Waipoua forest as a life-size virtual image, Joseph is working in conjunction with AUT’s Associate Professor Barbara Bollard, Ashray Doshi and Professor Len Gillman, School of Science, who are studying the trees from a scientific perspective at the same time. The team is also collaborating with Te Roroa iwi and the Department of Conservation and is supported by Radio NZ and Creative New Zealand. “It’s an exciting opportunity to expand our knowledge of one of NZ’s most treasured species, we need to think deeper and understand the consequences of our actions toward the natural environment,” says Joseph. “The opportunity to work across disciplines at AUT is fantastic, I’m working directly with scientists in the creation of this work and aiming to produce a visual meeting point between Mātauranga Māori and western science.” Joseph adds. Joseph is one of New Zealand’s most exciting artists, and his work, which is moving ever closer to bring art and science together, is something that is a natural fit for a University of Technology."
+        imageTextOne="/images/story-raised/tane-real.jpg"
+        imageTextTwo="/images/story-raised/tane-full.jpg"
       />
 
       <div className="story-container-news">
         <News
-          image="/images/story-drone/ted-barbara.jpg"
-          title="Mapping by drone - Africa to Antartica"
-          text="While some drones are used to destroy, Barbara’s team uses them –
-          complete with military guidance technology – to map threatened
-          ecosystems in Africa, Australia and Antarctica."
-          link="/"
-        />
-        <News
-          image="/images/story-drone/ted-barbara.jpg"
-          title="Mapping by drone - Africa to Antartica"
-          text="While some drones are used to destroy, Barbara’s team uses them –
-          complete with military guidance technology – to map threatened
-          ecosystems in Africa, Australia and Antarctica."
+          image="/images/story-raised/tane-full.jpg"
+          title="Tūrama Festival puts our most majestic trees in the spotlight"
+          text="When Joseph Michael became an artist nearly two decades ago, the tools of his trade included paper, ink and screens for printmaking; today, he’s more likely to use ground-penetrating radar, drones and immersive augmented reality."
           link="/"
         />
       </div>
 
-      <ImageBottom image="/images/story-drone/landscape-lab.jpg" />
-      <ImageBottom image="/images/story-drone/house-lab.jpg" />
-      <ImageBottom image="/images/story-drone/barbara.jpg" />
-      <ImageBottom image="/images/story-drone/glaciar.jpg" />
+      <ImageBottom image="/images/story-raised/tane-bottom.jpg" />
     </div>
   );
 };
