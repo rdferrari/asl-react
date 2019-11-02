@@ -9,7 +9,9 @@ const News = ({ image, title, text, link }) => {
         <h3 className="story-title-news">{title}</h3>
         <p className="story-text-news">{text}</p>
         <button className="button-two bt-small">
-          <Link to={link}>Read more</Link>
+          <a target="_blank" href={link}>
+            Read more
+          </a>
         </button>
       </div>
     </div>

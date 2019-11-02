@@ -20,7 +20,7 @@ const StoryRaised = () => {
           image="/images/story-raised/tane-full.jpg"
           title="Tūrama Festival puts our most majestic trees in the spotlight"
           text="When Joseph Michael became an artist nearly two decades ago, the tools of his trade included paper, ink and screens for printmaking; today, he’s more likely to use ground-penetrating radar, drones and immersive augmented reality."
-          link="/"
+          link="https://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=12252019"
         />
       </div>
 

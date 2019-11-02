@@ -21,7 +21,7 @@ const WorkAntartica = () => {
           image="/images/work-antartica/new1.jpg"
           title="Antarctic Virtual Reality Announced"
           text="The Trust is thrilled to have partnered with Auckland University of Technology to create a ground-breaking virtual reality experience of Sir Edmund Hillary’s Antarctic hut."
-          link="/"
+          link="https://nzaht.org/antarctic-virtual-reality-announced/"
         />
       </div>
 

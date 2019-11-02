@@ -16,7 +16,9 @@ const Labs = () => {
               <h2 className="title-black">{lab.title}</h2>
               <p className="intro-black">{lab.intro}</p>
               <button className="button-one bt-small">
-                <Link to="/">Learn more</Link>
+                <a target="_blank" href={lab.link}>
+                  Learn more
+                </a>
               </button>
             </div>
             <div className="images-black">

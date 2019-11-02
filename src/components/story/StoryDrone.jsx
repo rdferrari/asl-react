@@ -46,28 +46,28 @@ const StoryDrone = () => {
           text="While some drones are used to destroy, Barbara’s team uses them –
           complete with military guidance technology – to map threatened
           ecosystems in Africa, Australia and Antarctica."
-          link="/"
+          link="https://tedxauckland.com/talks/mapping-by-drone-africa-to-antartica/"
         />
         <News
           image="/images/story-drone/antartida-top.jpg"
           title="Stunning 3D Scott Base model created by drone"
           text="New Zealand’s Antarctic outpost has been recreated in a stunning 3D model,
           allowing people to view Scott Base from any aerial angle."
-          link="/"
+          link="https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11844871"
         />
         <News
           image="/images/story-drone/team-photo-drones.jpg"
           title="Digital mapping of Antartica"
           text="Professor Barbara Bollard-Breen uses drones to map 
           the specially protected area around Scott Base in Antarctica."
-          link="/"
+          link="https://www.rnz.co.nz/national/programmes/afternoons/audio/201827115/digital-mapping-of-antartica"
         />
         <News
           image="/images/story-drone/drone.jpg"
           title="Up, Up and Away"
           text="When traditional technology was no longer able to answer the conservation questions AUT’s Dr Barbara Bollard-Breen was asking, she found a solution in drones. And other industries are seeing the potential too. 
           Erin McKenzie investigates the benefits of having eyes in the sky."
-          link="/"
+          link="https://idealog.co.nz/casestudies/and-away-auts-dr-bollard-breen"
         />
       </div>
 

@@ -20,7 +20,7 @@ const StoryRemote = () => {
           image="/images/story-remote/drone-barbara.jpg"
           title="NZ scientist teams up with alien-hunting SETI effort"
           text="A Kiwi scientist has teamed up with an alien-hunting programme for a study taking her to some of the most extreme spots on Earth."
-          link="/"
+          link="https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12122476"
         />
         <News
           image="/images/story-drone/ted-barbara.jpg"
@@ -28,13 +28,13 @@ const StoryRemote = () => {
           text="While some drones are used to destroy, Barbara’s team uses them –
           complete with military guidance technology – to map threatened
           ecosystems in Africa, Australia and Antarctica."
-          link="/"
+          link="https://tedxauckland.com/talks/mapping-by-drone-africa-to-antartica/"
         />
         <News
           image="/images/story-remote/drone-close.jpg"
           title="Up, Up and Away"
           text="When traditional technology was no longer able to answer the conservation questions AUT’s Dr Barbara Bollard-Breen was asking, she found a solution in drones. And other industries are seeing the potential too. Erin McKenzie investigates the benefits of having eyes in the sky."
-          link="/"
+          link="https://idealog.co.nz/casestudies/and-away-auts-dr-bollard-breen"
         />
       </div>
 

@@ -20,13 +20,13 @@ const WorkCloud = () => {
           image="/images/work-clouds/new1.jpg"
           title="How dirty is Auckland’s air?"
           text="A new smartphone app that allows users to check Auckland’s air quality at any given time features in a climate change festival where science meets art."
-          link="/"
+          link="https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11820375"
         />
         <News
           image="/images/work-clouds/new2.jpg"
           title="Can art make science a breath of fresh air?"
           text="Students in West Auckland are helping to create a truly innovative art installation while learning about air and climate science."
-          link="/"
+          link="https://www.curiousminds.nz/stories/can-art-make-science-a-breath-of-fresh-air/"
         />
       </div>
 
