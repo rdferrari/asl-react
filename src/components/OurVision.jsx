@@ -13,7 +13,7 @@ const OurVision = () => {
           </p>
         </div>
 
-        <img className="full-image" src="/images/home-glaciar.jpg" />
+        <img className="full-image" src="/images/home-glaciarb.jpg" />
       </header>
       <div className="content-container">
         <div className="content-container-left">

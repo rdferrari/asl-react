@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,84 +27,106 @@ import WorkAntartica from "./components/story/WorkAntartica";
 import WorkMarae from "./components/story/WorkMarae";
 import WorkCrude from "./components/story/WorkCrude";
 
-const App = () => {
-  return (
-    <HashRouter>
-      <div>
-        <Menu
-          logo="/images/logo-asl.png"
-          menu="menu"
-          contact="menu-contact-none"
-        />
-        <div className="components">
-          <Switch>
-            <ScrollToTop>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/our-vision">
-                <OurVision />
-              </Route>
-              <Route exact path="/stories">
-                <Stories />
-              </Route>
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { menuClass: null };
+  }
 
-              <Route exact path="/labs">
-                <Labs />
-              </Route>
-              <Route exact path="/posts">
-                <Posts />
-              </Route>
-              <Route exact path="/people">
-                <People />
-              </Route>
-              <Route exact path="/our-work">
-                <OurWork />
-              </Route>
-              <Route exact path="/partners">
-                <Partners />
-              </Route>
-              <Route exact path="/stories/drone-of-conservation">
-                <StoryDrone />
-              </Route>
-              <Route exact path="/stories/remote-sensing">
-                <StoryRemote />
-              </Route>
-              <Route exact path="/stories/raised-up-sky">
-                <StoryRaised />
-              </Route>
-              <Route exact path="/work/airbox">
-                <WorkAirBox />
-              </Route>
+  handleThisMenu = () => {
+    const { menuClass } = this.state;
+    this.setState({
+      menuClass: "menu-this-menu"
+    });
+  };
 
-              <Route exact path="/work/clouds">
-                <WorkCloud />
-              </Route>
+  render() {
+    // console.log(window.location.hash);
+    const { menuClass } = this.state;
 
-              <Route exact path="/work/antartica">
-                <WorkAntartica />
-              </Route>
+    return (
+      <HashRouter>
+        <div>
+          <Menu
+            logo="/images/logo-asl.png"
+            logoStyle="menu-logo-asl"
+            menu="menu"
+            contact="menu-contact-none"
+            menuClass={menuClass}
+            onClick={this.handleThisMenu}
+          />
+          <div className="components">
+            <Switch>
+              <ScrollToTop>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route exact path="/our-vision">
+                  <OurVision />
+                </Route>
+                <Route exact path="/stories">
+                  <Stories />
+                </Route>
 
-              <Route exact path="/work/marae">
-                <WorkMarae />
-              </Route>
+                <Route exact path="/labs">
+                  <Labs />
+                </Route>
+                <Route exact path="/posts">
+                  <Posts />
+                </Route>
+                <Route exact path="/people">
+                  <People />
+                </Route>
+                <Route exact path="/our-work">
+                  <OurWork />
+                </Route>
+                <Route exact path="/partners">
+                  <Partners />
+                </Route>
+                <Route exact path="/stories/drone-of-conservation">
+                  <StoryDrone />
+                </Route>
+                <Route exact path="/stories/remote-sensing">
+                  <StoryRemote />
+                </Route>
+                <Route exact path="/stories/raised-up-sky">
+                  <StoryRaised />
+                </Route>
+                <Route exact path="/work/airbox">
+                  <WorkAirBox />
+                </Route>
 
-              <Route exact path="/work/crude">
-                <WorkCrude />
-              </Route>
-            </ScrollToTop>
-          </Switch>
-          <div className="footer">
-            <Menu
-              logo="/images/logo-asl-footer.png"
-              menu="menu-footer"
-              contact="menu-contact-container"
-            />
+                <Route exact path="/work/clouds">
+                  <WorkCloud />
+                </Route>
+
+                <Route exact path="/work/antartica">
+                  <WorkAntartica />
+                </Route>
+
+                <Route exact path="/work/marae">
+                  <WorkMarae />
+                </Route>
+
+                <Route exact path="/work/crude">
+                  <WorkCrude />
+                </Route>
+              </ScrollToTop>
+            </Switch>
+            <div className="footer">
+              <Menu
+                logo="/images/logo-asl-footer.png"
+                menu="menu-footer"
+                contact="menu-contact-container"
+                logoStyle="menu-logo-asl_footer"
+                menuFooter="menu-list-footer"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </HashRouter>
-  );
-};
+      </HashRouter>
+    );
+  }
+}
 
 export default App;

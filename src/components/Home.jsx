@@ -32,7 +32,7 @@ const Home = () => {
       <HomeContent
         title="Our Vision"
         link="./our-vision"
-        image="/images/home-glaciar.jpg"
+        image="/images/home-glaciarb.jpg"
       />
 
       <HomeContent
@@ -50,7 +50,7 @@ const Home = () => {
       />
 
       <HomeContent
-        title="Our Worok"
+        title="Our Work"
         link="./our-work"
         image="/images/home-work.jpg"
       />

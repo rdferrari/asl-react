@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Menu = ({ logo, menu, contact }) => {
+const Menu = ({
+  logo,
+  menu,
+  contact,
+  logoStyle,
+  menuFooter,
+  menuClass,
+  onClick
+}) => {
   return (
     <div className={menu}>
       <div>
         <Link to="/">
-          <img className="menu-logo-asl" src={logo} />
+          <img className={logoStyle} src={logo} />
         </Link>
       </div>
 
@@ -30,24 +38,36 @@ const Menu = ({ logo, menu, contact }) => {
         </div>
       </div>
 
-      <ul>
+      <ul className={menuFooter}>
         <li>
-          <Link to="/our-vision">Our Vision</Link>
+          <Link onClick={onClick} className={menuClass} to="/our-vision">
+            Our Vision
+          </Link>
         </li>
         <li>
-          <Link to="/stories">Stories</Link>
+          <Link onClick={onClick} className={menuClass} to="/stories">
+            Stories
+          </Link>
         </li>
         <li>
-          <Link to="/labs">Labs</Link>
+          <Link onClick={onClick} className={menuClass} to="/labs">
+            Labs
+          </Link>
         </li>
         <li>
-          <Link to="/people">People</Link>
+          <Link onClick={onClick} className={menuClass} to="/people">
+            People
+          </Link>
         </li>
         <li>
-          <Link to="/our-work">Our Work</Link>
+          <Link onClick={onClick} className={menuClass} to="/our-work">
+            Our Work
+          </Link>
         </li>
         <li>
-          <Link to="/partners">Partners</Link>
+          <Link onClick={onClick} className={menuClass} to="/partners">
+            Partners
+          </Link>
         </li>
       </ul>
 
