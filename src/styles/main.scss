@@ -100,7 +100,8 @@ a {
 .content-title {
   color: $secondary;
   font-family: $fontSecondary;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .content-title-eng {
@@ -108,12 +109,14 @@ a {
   font-family: $fontSecondary;
   font-size: 25px;
   font-style: italic;
+  font-weight: 100;
 }
 
 .content-text {
   color: $secondary;
   font-family: $fontSecondary;
   font-size: 20px;
+  font-weight: 100;
 }
 
 .content-image {
@@ -150,7 +153,7 @@ a {
 .intro-black {
   font-family: $fontSecondary;
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 60px;
 }
 
