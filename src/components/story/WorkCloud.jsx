@@ -12,6 +12,7 @@ const WorkCloud = () => {
         imageHeader="/images/work-clouds/header.jpg"
         text="F4 Art Collective, (Susan Jowsey, Marcus Williams and Mercy Williams) and NIWA air quality scientists collaborated on a two year project, producing three significant participatory research outputs: My Personal Cloud, The ArtScience Project in schools and O-Tū- Kapua, as well as a number of published papers. This collaboration was part of the inaugural TEMPAuckland art-science project was curated by Corbans Estate, Te Uru Waitakere Contemporary Art Gallery and Auckland City and Te Kawerau a Maki. The final project O-Tū- Kapua saw F4 Collective and NIWA air quality scientists joined by Composer Maree Sheehan (Te Ara Poutama), AUT’s Centre for Learning and Teaching, and digital technologies company Imersia. O-Tū-Kapua received funding through an Unlocking Curious Minds (UCM) grant from the Ministry of Business Innovation and Employment (MBIE)."
         imageTextOne="/images/work-clouds/content.png"
+        news={true}
       />
 
       <div className="story-container-news">

@@ -3,7 +3,7 @@ import News from "./News";
 import ImageBottom from "./ImageBottom";
 import Story from "./Story";
 
-const WorkAirBox = () => {
+const WorkMarae = () => {
   return (
     <div>
       <Story
@@ -22,4 +22,4 @@ const WorkAirBox = () => {
   );
 };
 
-export default WorkAirBox;
+export default WorkMarae;

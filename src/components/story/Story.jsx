@@ -8,7 +8,8 @@ const Story = ({
   imageHeader,
   text,
   imageTextOne,
-  imageTextTwo
+  imageTextTwo,
+  news
 }) => {
   return (
     <div>
@@ -27,7 +28,9 @@ const Story = ({
             <img className="story-image-text" src={imageTextTwo} />
           </div>
         </div>
-        <h2 className="story-news-title">News Coverage / Purongo</h2>
+        {news === true ? (
+          <h2 className="story-news-title">News Coverage / Purongo</h2>
+        ) : null}
       </div>
     </div>
   );
