@@ -23,14 +23,10 @@ class MenuItem extends Component {
   render() {
     const { active } = this.state;
 
-    console.log(window.location.hash);
-
-    const path = window.location.hash;
-
     return (
       <div>
         {items.map(item => (
-          <li>
+          <li key={item.name}>
             <Link
               className={active === item.name ? "menu-this-menu" : {}}
               to={item.link}
@@ -38,7 +34,6 @@ class MenuItem extends Component {
             >
               {item.name}
             </Link>
-            {console.log(item.link)}
           </li>
         ))}
       </div>
