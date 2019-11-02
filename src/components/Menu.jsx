@@ -1,5 +1,50 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link, useParams } from "react-router-dom";
+
+const items = [
+  { name: "Our Vision", link: "/our-vision" },
+  { name: "Stories", link: "/stories" },
+  { name: "Labs", link: "/labs" },
+  { name: "People", link: "/people" },
+  { name: "Our Work", link: "/our-work" },
+  { name: "Partners", link: "/partners" }
+];
+
+class MenuItem extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { active: "" };
+  }
+
+  _handleClick(menuItem) {
+    this.setState({ active: menuItem });
+  }
+
+  render() {
+    const { active } = this.state;
+
+    console.log(window.location.hash);
+
+    const path = window.location.hash;
+
+    return (
+      <div>
+        {items.map(item => (
+          <li>
+            <Link
+              className={active === item.name ? "menu-this-menu" : {}}
+              to={item.link}
+              onClick={this._handleClick.bind(this, item.name)}
+            >
+              {item.name}
+            </Link>
+            {console.log(item.link)}
+          </li>
+        ))}
+      </div>
+    );
+  }
+}
 
 const Menu = ({
   logo,
@@ -39,36 +84,7 @@ const Menu = ({
       </div>
 
       <ul className={menuFooter}>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/our-vision">
-            Our Vision
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/stories">
-            Stories
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/labs">
-            Labs
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/people">
-            People
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/our-work">
-            Our Work
-          </Link>
-        </li>
-        <li>
-          <Link onClick={onClick} className={menuClass} to="/partners">
-            Partners
-          </Link>
-        </li>
+        <MenuItem />
       </ul>
 
       <div>

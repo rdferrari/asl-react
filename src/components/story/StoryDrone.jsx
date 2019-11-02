@@ -37,6 +37,7 @@ const StoryDrone = () => {
             experience some of Antarctica's human history."
         imageTextOne="/images/story-drone/drone-pilot.jpg"
         imageTextTwo="/images/story-drone/team-photo-drones.jpg"
+        news={true}
       />
 
       <div className="story-container-news">

@@ -34,7 +34,6 @@ class App extends Component {
   }
 
   handleThisMenu = () => {
-    const { menuClass } = this.state;
     this.setState({
       menuClass: "menu-this-menu"
     });

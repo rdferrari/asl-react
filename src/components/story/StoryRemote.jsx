@@ -13,6 +13,7 @@ const StoryRemote = () => {
         text="Their research, which turned out some innovative new approaches to spatial analysis, caught the attention of scientists working on a Search for Extraterrestrial Intelligence (SETI) Institute programme, in similarly hostile conditions in South America’s famed Atacama Desert. They invited Bollard to Nasa’s Ames Research Centre in California, where they mapped out a collaboration involving more work at both regions over the coming years. For scientists hunting for life in the universe, such extreme environments provided a useful analogue to learn how it was that organisms could adapt and survive with little to sustain them. With a multi-spectral camera mounted on custom built drones, along with a hand-held hyperspectral instrument on the ground, they were able to characterise the spectral reflectance of one the most unique plant species on the planet. “On this planet, we hope our research will inform global policy makers on the importance of life in extreme desert systems as sentinels of climate change,” Bollard said."
         imageTextOne="/images/story-remote/plant.jpg"
         imageTextTwo="/images/story-remote/namibia-wide-combo.jpg"
+        news={true}
       />
 
       <div className="story-container-news">
