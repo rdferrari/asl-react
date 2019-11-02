@@ -2,101 +2,169 @@
   {
     "id": 1,
     "name": "Ali Taheri",
-    "image": "/images/people/ali.png"
+    "image": "/images/people/ali.png",
+    "link": "https://applab.ac.nz/who-we-are-2/ali-taheri-phd-student/"
   },
   {
     "id": 2,
     "name": "Andrew Denton",
-    "image": "/images/people/andrew.png"
+    "image": "/images/people/andrew.png",
+    "link": "https://www.aut.ac.nz/profiles?id=adenton"
   },
   {
     "id": 3,
     "name": "Ashray Doshi",
-    "image": "/images/people/avatar.png"
+    "image": "/images/people/avatar.png",
+    "link": "https://www.linkedin.com/in/ashraydoshi/"
   },
   {
     "id": 4,
     "name": "Claudio Aguayo",
-    "image": "/images/people/claudio.png"
+    "image": "/images/people/claudio.png",
+    "link": "https://applab.ac.nz/who-we-are-2/claudio-aguayo/"
   },
   {
     "id": 5,
     "name": "Ethan Harris",
-    "image": "/images/people/avatar.png"
+    "image": "/images/people/avatar.png",
+    "link": "#"
   },
   {
     "id": 6,
     "name": "Gregory Bennett",
-    "image": "/images/people/gregory.png"
+    "image": "/images/people/gregory.png",
+    "link": "https://www.aut.ac.nz/profiles?id=gbennett&asset=264276"
   },
   {
     "id": 7,
     "name": "Hohepa Spooner",
-    "image": "/images/people/hohepa.png"
+    "image": "/images/people/hohepa.png",
+    "link": "https://applab.ac.nz/who-we-are-2/hohepa-spooner-director-operations/"
   },
   {
     "id": 8,
     "name": "Jan Kruse",
-    "image": "/images/people/jan.png"
+    "image": "/images/people/jan.png",
+    "link": "https://www.aut.ac.nz/profiles?id=jkruse"
   },
   {
     "id": 9,
     "name": "James Smith",
-    "image": "/images/people/james.png"
+    "image": "/images/people/james.png",
+    "link": "https://cargocollective.com/jimharveysmith"
   },
   {
     "id": 10,
     "name": "Janine Randerson",
-    "image": "/images/people/janine.png"
+    "image": "/images/people/janine.png",
+    "link": "https://www.aut.ac.nz/profiles?id=jranders"
   },
   {
     "id": 11,
     "name": "Joseph Michael",
-    "image": "/images/people/joseph.png"
+    "image": "/images/people/joseph.png",
+    "link": "https://www.joemichael.co.nz/#/raised-up-sky"
   },
   {
     "id": 12,
     "name": "Josh Wagstaff",
-    "image": "/images/people/avatar.png"
+    "image": "/images/people/avatar.png",
+    "link": "#"
   },
   {
     "id": 13,
     "name": "Katarina Markovic",
-    "image": "/images/people/katarina.png"
+    "image": "/images/people/katarina.png",
+    "link": "https://katarinamarkovicportfolio.wordpress.com/"
   },
   {
     "id": 14,
     "name": "Lee Jackson",
-    "image": "/images/people/lee.png"
+    "image": "/images/people/lee.png",
+    "link": "https://mocap.aut.ac.nz/"
   },
   {
     "id": 15,
     "name": "Len Gillman",
-    "image": "/images/people/len.png"
+    "image": "/images/people/len.png",
+    "link": "https://www.aut.ac.nz/profiles?id=lgillman&asset=266344"
   },
   {
     "id": 16,
     "name": "Maree Sheehan",
-    "image": "/images/people/sheehan.png"
+    "image": "/images/people/sheehan.png",
+    "link": "https://www.aut.ac.nz/profiles?id=msheehan"
   },
   {
     "id": 17,
     "name": "Parisa Moradi",
-    "image": "/images/people/parisa.png"
+    "image": "/images/people/parisa.png",
+    "link": "https://applab.ac.nz/who-we-are-2/parisa-moradi/"
   },
   {
     "id": 18,
     "name": "Quentin Quaadgras",
-    "image": "/images/people/avatar.png"
+    "image": "/images/people/avatar.png",
+    "link": "https://applab.ac.nz/who-we-are-2/quentin-quaadgras/"
   },
   {
     "id": 19,
     "name": "Robert Pouwhare",
-    "image": "/images/people/robert.png"
+    "image": "/images/people/robert.png",
+    "link": "https://www.aut.ac.nz/profiles?id=rpouwhar"
   },
   {
     "id": 20,
     "name": "Sue Jowsey",
-    "image": "/images/people/susan.png"
+    "image": "/images/people/susan.png",
+    "link": "https://www.aut.ac.nz/profiles?id=sjowsey"
+  },
+  {
+    "id": 21,
+    "name": "Chris Burns",
+    "image": "/images/people/avatar.png",
+    "link": "#"
+  },
+  {
+    "id": 22,
+    "name": "Grant Lawrence",
+    "image": "/images/people/avatar.png",
+    "link": "https://www.linkedin.com/in/grantrlawrence/"
+  },
+  {
+    "id": 23,
+    "name": "Lorenzo Fiori",
+    "image": "/images/people/lorenzo.png",
+    "link": "https://www.linkedin.com/in/lorenzo-fiori-75324b105/"
+  },
+  {
+    "id": 24,
+    "name": "Ryan Smith",
+    "image": "/images/people/ryan.png",
+    "link": "https://www.linkedin.com/in/ryan-smith-b488447b/"
+  },
+  {
+    "id": 25,
+    "name": "Stace Ellis",
+    "image": "/images/people/stace.png",
+    "link": "https://www.linkedin.com/in/stace-ellis-043a17133/"
+  },
+  {
+    "id": 26,
+    "name": "Subhash Chand",
+    "image": "/images/people/subhash.png",
+    "link": "https://www.linkedin.com/in/subhashchd/"
+  },
+  {
+    "id": 27,
+    "name": "Ticiana Fettermann",
+    "image": "/images/people/ticiana.png",
+    "link": "https://www.linkedin.com/in/ticiana-fettermann/"
+  },
+  {
+    "id": 28,
+    "name": "Julia King",
+    "image": "/images/people/julia.png",
+    "link": "https://www.linkedin.com/in/julia-king-7297b4121/"
   }
 ]
