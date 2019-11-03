@@ -41,29 +41,27 @@ class Partners extends Component {
   _maps() {
     return (
       <div className="partners-container">
-        <div className="content-container-black">
-          <header>
-            <h1>Partners / E Hoa</h1>
-          </header>
-          <div className="partners-maps-container">
-            <div>
-              <img
-                onClick={this.toogleOceania}
-                className="partners-map-image"
-                src="/images/maps/au-nz.png"
-              />
-              <p className="partners-map-text">
-                Partners in Australia & New Zealand
-              </p>
-            </div>
-            <div>
-              <img
-                onClick={this.toogleWorld}
-                className="partners-map-image"
-                src="/images/maps/world.png"
-              />
-              <p className="partners-map-text">International Partners</p>
-            </div>
+        <header>
+          <h1 className="tagline-partners">Partners / E Hoa</h1>
+        </header>
+        <div className="partners-maps-container">
+          <div>
+            <img
+              onClick={this.toogleOceania}
+              className="partners-map-image"
+              src="/images/maps/au-nz.png"
+            />
+            <p className="partners-map-text">
+              Partners in Australia & New Zealand
+            </p>
+          </div>
+          <div>
+            <img
+              onClick={this.toogleWorld}
+              className="partners-map-image"
+              src="/images/maps/world.png"
+            />
+            <p className="partners-map-text">International Partners</p>
           </div>
         </div>
       </div>
@@ -75,32 +73,32 @@ class Partners extends Component {
 
     return (
       <div className="partners-container">
-        <div className="content-container-black">
-          <header>
-            <h1>International Partners / Hoa Taiao</h1>
-            <p onClick={this.toogleWorld} className="partners-back-bt">
-              Back - Partners / E Hoa
-            </p>
-          </header>
-          <div className="partners-map-detail-container">
-            {europe === true ? (
-              <img
-                onClick={this.toogleEurope}
-                className="partners-europe-detail-image"
-                src="/images/maps/europe-detail.png"
-              />
-            ) : (
-              <div
-                onClick={this.toogleEurope}
-                className="partners-bt-invisible"
-              ></div>
-            )}
-
+        <header>
+          <h1 className="tagline-partners">
+            International Partners / Hoa Taiao
+          </h1>
+          <p onClick={this.toogleWorld} className="partners-back-bt">
+            Back - Partners / E Hoa
+          </p>
+        </header>
+        <div className="partners-map-detail-container">
+          {europe === true ? (
             <img
-              className="partners-map-detail-image"
-              src="/images/maps/world-detail.png"
+              onClick={this.toogleEurope}
+              className="partners-europe-detail-image"
+              src="/images/maps/europe-detail.png"
             />
-          </div>
+          ) : (
+            <div
+              onClick={this.toogleEurope}
+              className="partners-bt-invisible"
+            ></div>
+          )}
+
+          <img
+            className="partners-map-detail-image"
+            src="/images/maps/world-detail.png"
+          />
         </div>
       </div>
     );
@@ -111,35 +109,32 @@ class Partners extends Component {
 
     return (
       <div className="partners-container">
-        <div className="content-container-black">
-          <header>
-            <h1>
-              Partners in Australia and NZ / Hoa i roto o Ahitereiria me
-              Aotearoa
-            </h1>
-            <p onClick={this.toogleOceania} className="partners-back-bt">
-              Back - Partners / E Hoa
-            </p>
-          </header>
-          <div className="partners-map-detail-container">
-            {nz === true ? (
-              <img
-                onClick={this.toogleNz}
-                className="partners-nz-detail-image"
-                src="/images/maps/nz-detail.png"
-              />
-            ) : (
-              <div
-                onClick={this.toogleNz}
-                className="partners-bt-invisible-nz"
-              ></div>
-            )}
-
+        <header>
+          <h1 className="tagline-partners">
+            Partners in Australia and NZ / Hoa i roto o Ahitereiria me Aotearoa
+          </h1>
+          <p onClick={this.toogleOceania} className="partners-back-bt">
+            Back - Partners / E Hoa
+          </p>
+        </header>
+        <div className="partners-map-detail-container">
+          {nz === true ? (
             <img
-              className="partners-map-detail-image"
-              src="/images/maps/au-nz-detail.png"
+              onClick={this.toogleNz}
+              className="partners-nz-detail-image"
+              src="/images/maps/nz-detail.png"
             />
-          </div>
+          ) : (
+            <div
+              onClick={this.toogleNz}
+              className="partners-bt-invisible-nz"
+            ></div>
+          )}
+
+          <img
+            className="partners-map-detail-image"
+            src="/images/maps/au-nz-detail.png"
+          />
         </div>
       </div>
     );
