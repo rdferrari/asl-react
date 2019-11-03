@@ -140,7 +140,7 @@ a {
 
 .content-container-black {
   margin: auto;
-  width: 70%;
+  width: 80%;
   padding: 100px 0;
 }
 
@@ -156,13 +156,21 @@ a {
 
 .title-black {
   font-family: $primaryBold;
-  font-size: 40px;
+  font-size: $text-xl;
 }
 
 .intro-black {
   font-family: $fontSecondary;
-  font-size: 25px;
+  font-size: $text-lg;
   font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.intro-black_sub {
+  font-family: $fontSecondary;
+  font-size: $text-md;
+  font-weight: 100;
+  letter-spacing: 1px;
   margin-bottom: 60px;
 }
 
@@ -172,6 +180,8 @@ a {
 
 .image-right {
   width: 400px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .image-logo {
