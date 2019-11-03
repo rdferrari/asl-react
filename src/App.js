@@ -41,7 +41,7 @@ class App extends Component {
   };
 
   render() {
-    // console.log(window.location.hash);
+    // console.log(window.location);
     const { menuClass } = this.state;
 
     return (

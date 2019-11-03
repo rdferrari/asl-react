@@ -15,6 +15,10 @@
   z-index: 2;
 }
 
+.menu-border {
+  border-bottom: 1px solid $secondary;
+}
+
 .menu-footer {
   background-color: $secondary;
   border-bottom: 1px solid $secondary;
