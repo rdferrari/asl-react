@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Switch, Route, HashRouter } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+  useRouteMatch
+} from "react-router-dom";
 import ScrollToTop from "react-router-scroll-top";
 
 // components
