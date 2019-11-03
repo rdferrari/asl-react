@@ -41,15 +41,7 @@ class MenuItem extends Component {
   }
 }
 
-const Menu = ({
-  logo,
-  menu,
-  contact,
-  logoStyle,
-  menuFooter,
-  menuClass,
-  onClick
-}) => {
+const Menu = ({ logo, menu, contact, logoStyle, menuFooter }) => {
   return (
     <div className={menu}>
       <div>

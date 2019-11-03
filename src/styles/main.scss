@@ -2,6 +2,7 @@
 @import "./variables.scss";
 
 body {
+  padding: 0;
   margin: 0;
 }
 
@@ -68,12 +69,15 @@ a {
 }
 
 .image-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  margin-bottom: -5px;
 }
 
 .full-image {
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .tagline {
