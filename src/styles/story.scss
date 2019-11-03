@@ -4,36 +4,37 @@
 .story-intro {
   color: $primary;
   font-family: $fontSecondary;
-  font-size: 26px;
+  font-size: $text-lg;
   width: 600px;
 }
 
 .story-tagline {
   color: $primary;
-  font-size: 45px;
+  font-size: $text-xxl;
 }
 
 .story-container {
   margin: auto;
-  width: 70%;
+  width: 80%;
   padding: 100px 20px 0 20px;
 }
 
 .story-container-flex {
   display: flex;
   margin-bottom: 50px;
+  max-width: 1200px;
 }
 
 .story-image-text {
-  margin-bottom: 50px;
+  margin: 20px 0;
   width: 400px;
   height: auto;
 }
 
 .story-intro-text {
   font-family: $fontSecondary;
-  font-size: 22px;
-  padding-right: 100px;
+  font-size: $text-md;
+  padding-right: 80px;
 }
 
 .story-news-title {
@@ -44,11 +45,12 @@
 }
 
 .story-image-news {
-  width: 500px;
+  width: 400px;
+  height: auto;
 }
 
 .story-news-content {
-  margin-left: 100px;
+  padding: 0 50px;
 }
 
 .story-title-news {
@@ -60,7 +62,7 @@
 .story-text-news {
   margin-bottom: 30px;
   font-family: $fontSecondary;
-  font-size: 22px;
+  font-size: $text-md;
   font-weight: 100;
 }
 
@@ -69,7 +71,5 @@
 }
 
 .story-container-news {
-  margin: auto;
-  width: 70%;
-  padding: 0 20px 100px 20px;
+  margin-left: 100px;
 }
