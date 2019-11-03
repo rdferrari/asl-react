@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import LabsList from "../data/labs.json";
 
@@ -17,13 +16,13 @@ const Labs = () => {
               <p className="intro-black">{lab.intro}</p>
               <p className="intro-black_sub">{lab.text}</p>
               <button className="button-one bt-small">
-                <a target="_blank" href={lab.link}>
+                <a rel="noopener noreferrer" target="_blank" href={lab.link}>
                   Learn more
                 </a>
               </button>
             </div>
             <div className="images-black">
-              <img className="image-right" src={lab.image} />
+              <img alt="" className="image-right" src={lab.image} />
             </div>
           </div>
         ))}

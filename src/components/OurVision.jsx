@@ -13,7 +13,11 @@ const OurVision = () => {
           </p>
         </div>
 
-        <img className="full-image" src="/images/home-glaciarb.jpg" />
+        <img
+          alt="Antartica glaciar"
+          className="full-image"
+          src="/images/home-glaciarb.jpg"
+        />
       </header>
       <div className="content-container">
         <div className="content-container-left">
@@ -48,9 +52,21 @@ const OurVision = () => {
           </p>
         </div>
         <div className="content-container-right">
-          <img className="content-image" src="/images/our-vision-ice.png" />
-          <img className="content-image" src="/images/our-vision-tree.png" />
-          <img className="content-image" src="/images/our-vision-people.png" />
+          <img
+            alt="Ice"
+            className="content-image"
+            src="/images/our-vision-ice.png"
+          />
+          <img
+            alt="Tree"
+            className="content-image"
+            src="/images/our-vision-tree.png"
+          />
+          <img
+            alt="People"
+            className="content-image"
+            src="/images/our-vision-people.png"
+          />
         </div>
       </div>
     </div>

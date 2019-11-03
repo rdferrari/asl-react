@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const items = [
   { name: "Our Vision", link: "/our-vision" },
@@ -46,7 +46,7 @@ const Menu = ({ logo, menu, contact, logoStyle, menuFooter }) => {
     <div className={menu}>
       <div>
         <Link to="/">
-          <img className={logoStyle} src={logo} />
+          <img alt="ASL logo" className={logoStyle} src={logo} />
         </Link>
       </div>
 
@@ -57,6 +57,7 @@ const Menu = ({ logo, menu, contact, logoStyle, menuFooter }) => {
 
         <div className="menu-contact-flex">
           <img
+            alt=""
             className="menu-contact-image"
             src="/images/contact/barbara.png"
           />
@@ -65,14 +66,22 @@ const Menu = ({ logo, menu, contact, logoStyle, menuFooter }) => {
           </p>
         </div>
         <div className="menu-contact-flex">
-          <img className="menu-contact-image" src="/images/contact/home.png" />
+          <img
+            alt=""
+            className="menu-contact-image"
+            src="/images/contact/home.png"
+          />
           <p className="menu-contact-text">
             55 Wellesley Street East, Auckland Central
           </p>
         </div>
 
         <div className="menu-contact-flex">
-          <img className="menu-contact-image" src="/images/contact/email.png" />
+          <img
+            alt=""
+            className="menu-contact-image"
+            src="/images/contact/email.png"
+          />
           <p className="menu-contact-text">barbara.bollard@aut.ac.nz</p>
         </div>
       </div>
@@ -82,7 +91,7 @@ const Menu = ({ logo, menu, contact, logoStyle, menuFooter }) => {
       </ul>
 
       <div>
-        <img className="menu-logo-aut" src="/images/logo-aut.png" />
+        <img alt="" className="menu-logo-aut" src="/images/logo-aut.png" />
       </div>
     </div>
   );

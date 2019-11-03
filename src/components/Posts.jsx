@@ -30,7 +30,7 @@ class Posts extends Component {
             </p>
           </div>
 
-          <img className="full-image" src="/images/home-lab.jpg" />
+          <img alt="Lab" className="full-image" src="/images/home-lab.jpg" />
         </header>
 
         <div className="posts">

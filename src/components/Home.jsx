@@ -10,7 +10,7 @@ const HomeContent = ({ title, link, image }) => {
           <Link to={link}>Learn more</Link>
         </button>
       </div>
-      <img className="full-image" src={image} />
+      <img alt="" className="full-image" src={image} />
     </div>
   );
 };
@@ -27,7 +27,7 @@ const Home = () => {
           </p>
         </div>
 
-        <img className="full-image" src="/images/home-arvore.jpg" />
+        <img alt="" className="full-image" src="/images/home-arvore.jpg" />
       </header>
       <HomeContent
         title="Our Vision"

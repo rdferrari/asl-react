@@ -7,7 +7,7 @@ const Work = ({ name, image, link }) => {
   return (
     <div className="person-container">
       <Link to={link}>
-        <img className="people-image_work" src={image} />
+        <img alt="Work example" className="people-image_work" src={image} />
         <div className="key-people-texts">
           <p className="people-name">{name}</p>
         </div>

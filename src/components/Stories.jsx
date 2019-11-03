@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import StoriesList from "../data/stories.json";
@@ -21,8 +21,16 @@ const Stories = () => {
               </button>
             </div>
             <div className="images-black">
-              <img className="image-right" src={story.image_one} />
-              <img className="image-right" src={story.image_two} />
+              <img
+                alt="Recent stories images"
+                className="image-right"
+                src={story.image_one}
+              />
+              <img
+                alt="Recent stories images"
+                className="image-right"
+                src={story.image_two}
+              />
             </div>
           </div>
         ))}

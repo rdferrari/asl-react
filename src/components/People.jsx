@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import PeopleList from "../data/people.json";
 
 const KeyPeople = ({ name, position, image, link }) => {
   return (
     <div className="key-people-container">
-      <img className="key-people-image" src={image} />
+      <img alt="Key people" className="key-people-image" src={image} />
       <div className="key-people-texts">
-        <a href={link} target="_blank">
+        <a rel="noopener noreferrer" href={link} target="_blank">
           <p className="key-people-name">{name}</p>
           <p className="key-people-position">{position}</p>
         </a>
@@ -20,8 +19,8 @@ const KeyPeople = ({ name, position, image, link }) => {
 const Person = ({ name, image, link }) => {
   return (
     <div className="person-container">
-      <a href={link} target="_blank">
-        <img className="people-image" src={image} />
+      <a rel="noopener noreferrer" href={link} target="_blank">
+        <img alt="Person" className="people-image" src={image} />
         <div className="key-people-texts">
           <p className="people-name">{name}</p>
         </div>

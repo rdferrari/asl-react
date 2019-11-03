@@ -47,6 +47,7 @@ class Partners extends Component {
         <div className="partners-maps-container">
           <div>
             <img
+              alt="Map Australia and New Zealand"
               onClick={this.toogleOceania}
               className="partners-map-image"
               src="/images/maps/au-nz.png"
@@ -57,6 +58,7 @@ class Partners extends Component {
           </div>
           <div>
             <img
+              alt="Map world"
               onClick={this.toogleWorld}
               className="partners-map-image"
               src="/images/maps/world.png"
@@ -84,6 +86,7 @@ class Partners extends Component {
         <div className="partners-map-detail-container">
           {europe === true ? (
             <img
+              alt="Map Europe detail"
               onClick={this.toogleEurope}
               className="partners-europe-detail-image"
               src="/images/maps/europe-detail.png"
@@ -96,6 +99,7 @@ class Partners extends Component {
           )}
 
           <img
+            alt="Map world detail"
             className="partners-map-detail-image"
             src="/images/maps/world-detail.png"
           />
@@ -120,6 +124,7 @@ class Partners extends Component {
         <div className="partners-map-detail-container">
           {nz === true ? (
             <img
+              alt="Map NZ details"
               onClick={this.toogleNz}
               className="partners-nz-detail-image"
               src="/images/maps/nz-detail.png"
@@ -132,6 +137,7 @@ class Partners extends Component {
           )}
 
           <img
+            alt="Map AU and NZ details"
             className="partners-map-detail-image"
             src="/images/maps/au-nz-detail.png"
           />

@@ -1,5 +1,4 @@
 import React from "react";
-import News from "./News";
 import ImageBottom from "./ImageBottom";
 import Story from "./Story";
 
