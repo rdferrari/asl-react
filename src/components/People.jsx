@@ -47,7 +47,7 @@ const People = () => {
     <div className="people-container">
       <div className="content-container-black">
         <header>
-          <h1>People / Tangata</h1>
+          <h1 className="tagline">People / Tangata</h1>
           <h2 className="title-black">Key People</h2>
           <div className="key-people-row-container">
             <KeyPeople

@@ -21,7 +21,7 @@ const OurWork = () => {
     <div className="people-container">
       <div className="content-container-black">
         <header>
-          <h1>Our Work / Mahi</h1>
+          <h1 className="tagline">Our Work / Mahi</h1>
           <div className="header-text-container">
             <p className="intro-black">
               The Art Science Lab at AUT expands the horizons of Art and Science
@@ -29,7 +29,7 @@ const OurWork = () => {
               imperative of preserving Earth’s threatened ecosystems, through
               ethical discourse and scholarly practice.
             </p>
-            <p className="intro-black">
+            <p className="intro-black_sub">
               When artists and scientists work together unexpected ideas and
               discoveries emerge. See a selection of our work below.
             </p>
