@@ -10,22 +10,22 @@
 
 .home-tagline {
   color: $primary;
-  font-size: 80px;
+  font-size: $text-xxxxl;
   font-weight: 100;
 }
 
 .home-tagline_sub {
   color: $primary;
-  font-size: 35px;
+  font-size: $text-lg;
   font-weight: 100;
-  width: 280px;
+  width: 200px;
 }
 
 .home-tagline_sub_italic {
   color: $primary;
   font-style: italic;
-  font-size: 35px;
-  width: 350px;
+  font-size: $text-lg;
+  width: 250px;
 }
 
 .home-text-container {

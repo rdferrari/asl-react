@@ -83,36 +83,34 @@ a {
 
 .tagline {
   color: $primary;
-  font-size: 35px;
+  font-size: $text-lg;
+  font-weight: 100;
 }
 
 .subtagline {
   color: $primary;
-  font-size: 60px;
+  font-size: $text-xxxl;
+  font-weight: 100;
 }
 
 .content-container {
   margin: auto;
   display: flex;
-  width: 70%;
-  padding: 100px 20px;
-}
-
-.content-container-left {
-  padding-right: 50px;
+  width: 80%;
+  padding: 100px 0;
 }
 
 .content-title {
   color: $secondary;
   font-family: $fontSecondary;
-  font-size: 30px;
+  font-size: $text-lg;
   font-weight: 600;
 }
 
 .content-title-eng {
   color: $secondary;
   font-family: $fontSecondary;
-  font-size: 25px;
+  font-size: $text-lg;
   font-style: italic;
   font-weight: 100;
 }
@@ -120,18 +118,24 @@ a {
 .content-text {
   color: $secondary;
   font-family: $fontSecondary;
-  font-size: 20px;
+  font-size: $text-md;
   font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .content-image {
-  margin: 35px 0;
+  margin-bottom: 30px;
   width: 400px;
+  height: auto;
 }
 
 .content-container-full {
   background-color: $secondary;
   color: $primary;
+}
+
+.content-container-left {
+  padding-right: 80px;
 }
 
 .content-container-black {
