@@ -11,6 +11,7 @@ const Stories = () => {
           <h1 className="main-tagline">Recent Stories / Te kōrero hou</h1>
         </header>
       </div>
+
       {StoriesList.map(story => (
         <div key={story.id} className="main-content-box_black">
           <div className="main-box-left">
@@ -21,7 +22,7 @@ const Stories = () => {
               <Link to={story.link}>See more</Link>
             </button>
           </div>
-          <div className="images-black">
+          <div className="main-box-right">
             <img
               alt="Recent stories images"
               className="main-content-image"

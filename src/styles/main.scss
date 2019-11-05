@@ -20,7 +20,7 @@ a {
 .main-box {
   background-color: $secondary;
   color: $primary;
-  padding-top: 60px;
+  padding: 60px 0;
   @include lg {
     padding-top: 100px;
   }
@@ -206,22 +206,31 @@ a {
 
 .main-title {
   font-family: $primaryBold;
-  font-size: $text-xl;
+  font-size: $text-lg;
+  @include md {
+    font-size: $text-xl;
+  }
 }
 
 .main-intro {
   font-family: $fontSecondary;
-  font-size: $text-lg;
+  font-size: $text-md;
   font-weight: 100;
   letter-spacing: 1px;
+  @include md {
+    font-size: $text-lg;
+  }
 }
 
 .main-intro_sub {
   font-family: $fontSecondary;
-  font-size: $text-md;
+  font-size: $text-sm;
   font-weight: 100;
   letter-spacing: 1px;
   margin-bottom: 60px;
+  @include md {
+    font-size: $text-md;
+  }
 }
 
 // old
