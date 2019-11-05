@@ -1,0 +1,75 @@
+@import "./variables.scss";
+
+.footer {
+  align-items: center;
+  background-color: $secondary;
+  border-top: 1px solid $primary;
+  color: $primary;
+  display: flex;
+  flex-direction: column;
+  font-family: $primaryRegular;
+  padding: 20px 0;
+  justify-content: center;
+  width: 100%;
+  @include md {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.footer-logo_box {
+  padding: 0;
+  @include md {
+    border-right: 1px solid $primary;
+    padding: 60px 40px;
+  }
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-contact {
+  padding: 0 30px;
+}
+
+.footer-contact_info {
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+}
+
+.footer-contact_title {
+  border-bottom: 1px solid $primary;
+  font-size: $text-md;
+  width: 95px;
+}
+
+.footer-contact_text {
+  font-size: $text-sm;
+}
+
+.footer-contact_icon {
+  height: 30px;
+  padding: 5px;
+}
+
+.footer-menu_item {
+  color: $primary;
+  font-size: $text-md;
+  margin-right: 50px;
+}
+
+.footer-menu_item a {
+  color: $primary;
+}
+
+.footer-menu {
+  display: none;
+  @include xl {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 0 50px;
+  }
+}

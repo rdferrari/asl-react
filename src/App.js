@@ -4,6 +4,7 @@ import ScrollToTop from "react-router-scroll-top";
 
 // components
 import TopNav from "./components/TopNav";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
 import Stories from "./components/Stories";
@@ -39,7 +40,7 @@ class App extends Component {
       <HashRouter>
         <div>
           <TopNav />
-          <div className="">
+          <div>
             <Switch>
               <ScrollToTop>
                 <Route exact path="/">
@@ -98,6 +99,7 @@ class App extends Component {
               </ScrollToTop>
             </Switch>
           </div>
+          <Footer />
         </div>
       </HashRouter>
     );
