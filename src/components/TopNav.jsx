@@ -9,7 +9,7 @@ class TopNav extends Component {
         <div>
           <Link to="/">
             <img
-              alt="ASL logo"
+              alt="Art Science Lab logo"
               className="menu-logo-asl"
               src="/images/logo-asl.png"
             />
@@ -17,7 +17,11 @@ class TopNav extends Component {
         </div>
         <Menu />
         <div>
-          <img alt="" className="menu-logo-aut" src="/images/logo-aut.png" />
+          <img
+            alt="Auckland University of Technology"
+            className="menu-logo-aut"
+            src="/images/logo-aut.png"
+          />
         </div>
       </div>
     );
