@@ -17,6 +17,163 @@ a {
   text-decoration: none;
 }
 
+.main-box {
+  background-color: $secondary;
+  padding-top: 60px;
+  @include lg {
+    padding-top: 100px;
+  }
+}
+
+.main-image-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-header-box {
+  font-family: $fontSecondary;
+  font-weight: 100;
+  position: relative;
+  padding-left: 20px;
+
+  @include md {
+    left: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  @include lg {
+    left: 150px;
+    top: 100px;
+  }
+}
+
+.main-tagline {
+  color: $primary;
+  font-family: $primaryRegular;
+  font-size: $text-md;
+  margin-top: 50px;
+  @include md {
+    font-size: $text-lg;
+    margin-top: 100px;
+  }
+}
+
+.main-subtagline {
+  color: $primary;
+  font-family: $primaryBold;
+  font-size: $text-xl;
+  @include md {
+    font-size: $text-xxxl;
+  }
+}
+
+.main-tagline_sub {
+  color: $primary;
+  font-size: $text-md;
+  font-weight: 100;
+  @include md {
+    font-size: $text-xl;
+    width: 300px;
+  }
+}
+
+.main-tagline_sub_italic {
+  color: $primary;
+  font-style: italic;
+  font-size: $text-md;
+  margin-bottom: 40px;
+  @include md {
+    font-size: $text-xl;
+    width: 350px;
+  }
+}
+
+.main-full-image {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 20px;
+  @include md {
+    flex-direction: row;
+    padding: 50px 50px;
+  }
+  @include xl {
+    padding: 100px 100px;
+  }
+  @include xxl {
+    padding: 100px 300px;
+  }
+}
+
+.main-box-left {
+  padding-right: 0;
+  @include md {
+    padding-right: 30px;
+  }
+  @include lg {
+    padding-right: 80px;
+  }
+}
+
+.main-box-right {
+  margin-top: 48px;
+}
+
+.main-content-title {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: $text-lg;
+  font-weight: 600;
+  @include xxl {
+    font-size: $text-xl;
+  }
+}
+
+.main-content-title-eng {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: $text-lg;
+  font-style: italic;
+  font-weight: 100;
+  @include xxl {
+    font-size: $text-xl;
+  }
+}
+
+.main-content-text {
+  color: $secondary;
+  font-family: $fontSecondary;
+  font-size: $text-md;
+  font-weight: 100;
+  letter-spacing: 1px;
+  @include xxl {
+    font-size: $text-lg;
+  }
+}
+
+.main-content-image {
+  margin-bottom: 30px;
+  width: 100%;
+  @include md {
+    width: 250px;
+    height: auto;
+  }
+  @include lg {
+    width: 400px;
+    height: auto;
+  }
+}
+
+// old
+
 .container {
   display: flex;
   flex-direction: column;

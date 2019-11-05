@@ -1,36 +1,36 @@
 @import "./variables.scss";
 
-.home-box {
-  background-color: $secondary;
-  padding-top: 60px;
-  @include lg {
-    padding-top: 100px;
-  }
-}
+// .home-box {
+//   background-color: $secondary;
+//   padding-top: 60px;
+//   @include lg {
+//     padding-top: 100px;
+//   }
+// }
 
-.home-image-box {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+// .home-image-box {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+// }
 
-.home-header-text {
-  font-family: $fontSecondary;
-  font-weight: 100;
-  position: relative;
-  padding-left: 20px;
+// .home-header-text {
+//   font-family: $fontSecondary;
+//   font-weight: 100;
+//   position: relative;
+//   padding-left: 20px;
 
-  @include md {
-    left: 80px;
-    position: absolute;
-    top: 20px;
-  }
+//   @include md {
+//     left: 80px;
+//     position: absolute;
+//     top: 20px;
+//   }
 
-  @include lg {
-    left: 150px;
-    top: 100px;
-  }
-}
+//   @include lg {
+//     left: 150px;
+//     top: 100px;
+//   }
+// }
 
 .home-tagline {
   color: $primary;

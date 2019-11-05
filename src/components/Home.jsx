@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HomeContent = ({ title, link, image, alt }) => {
   return (
-    <div className="home-image-box">
+    <div className="main-image-box">
       <img alt={alt} className="home-full-width-img" src={image} />
       <div className="home-text-container">
         <h3 className="home-text-button">{title}</h3>
@@ -17,12 +17,12 @@ const HomeContent = ({ title, link, image, alt }) => {
 
 const Home = () => {
   return (
-    <div className="home-box">
-      <header className="home-image-box">
-        <div className="home-header-text">
+    <div className="main-box">
+      <header className="main-image-box">
+        <div className="main-header-box">
           <h1 className="home-tagline">Art Science Lab</h1>
-          <p className="home-tagline_sub">Ko te taiao ko au, Ko au te taiao.</p>
-          <p className="home-tagline_sub_italic">
+          <p className="main-tagline_sub">Ko te taiao ko au, Ko au te taiao.</p>
+          <p className="main-tagline_sub_italic">
             The enviroment is me, I am the enviroment.
           </p>
         </div>
