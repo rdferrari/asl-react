@@ -25,14 +25,14 @@ a {
 .button-one {
   background-color: transparent;
   border: 1px solid $primary;
-  font-family: karla-bold;
+  font-family: $primaryBold;
   padding: 15px 25px;
 }
 
 .button-two {
   background-color: transparent;
   border: 1px solid $secondary;
-  font-family: karla-bold;
+  font-family: $primaryBold;
   padding: 15px 25px;
 }
 
@@ -45,11 +45,17 @@ a {
 }
 
 .bt-large {
-  font-size: 25px;
+  font-size: $text-sm;
+  @include md {
+    font-size: $text-lg;
+  }
 }
 
 .bt-small {
-  font-size: 20px;
+  font-size: $text-sm;
+  @include md {
+    font-size: $text-md;
+  }
 }
 
 .footer {

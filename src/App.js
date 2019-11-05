@@ -1,14 +1,8 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  HashRouter
-} from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import ScrollToTop from "react-router-scroll-top";
 
 // components
-import Menu from "./components/Menu";
 import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
@@ -41,14 +35,11 @@ class App extends Component {
   };
 
   render() {
-    // console.log(window.location);
-    const { menuClass } = this.state;
-
     return (
       <HashRouter>
         <div>
           <TopNav />
-          <div className="components">
+          <div className="">
             <Switch>
               <ScrollToTop>
                 <Route exact path="/">
@@ -106,9 +97,6 @@ class App extends Component {
                 </Route>
               </ScrollToTop>
             </Switch>
-            <div className="footer">
-              <Menu />
-            </div>
           </div>
         </div>
       </HashRouter>
