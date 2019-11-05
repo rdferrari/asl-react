@@ -3,13 +3,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  HashRouter,
-  useRouteMatch
+  HashRouter
 } from "react-router-dom";
 import ScrollToTop from "react-router-scroll-top";
 
 // components
 import Menu from "./components/Menu";
+import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import OurVision from "./components/OurVision";
 import Stories from "./components/Stories";
@@ -47,80 +47,67 @@ class App extends Component {
     return (
       <HashRouter>
         <div>
-          <Menu
-            logo="/images/logo-asl.png"
-            logoStyle="menu-logo-asl"
-            menu="menu"
-            contact="menu-contact-none"
-            menuClass={menuClass}
-            onClick={this.handleThisMenu}
-          />
+          <TopNav />
           <div className="components">
             <Switch>
               <ScrollToTop>
                 <Route exact path="/">
                   <Home />
                 </Route>
-                <Route exact path="/our-vision">
+                <Route path="/our-vision">
                   <OurVision />
                 </Route>
-                <Route exact path="/stories">
+                <Route path="/stories">
                   <Stories />
                 </Route>
 
-                <Route exact path="/labs">
+                <Route path="/labs">
                   <Labs />
                 </Route>
-                <Route exact path="/posts">
+                <Route path="/posts">
                   <Posts />
                 </Route>
-                <Route exact path="/people">
+                <Route path="/people">
                   <People />
                 </Route>
-                <Route exact path="/our-work">
+                <Route path="/our-work">
                   <OurWork />
                 </Route>
-                <Route exact path="/partners">
+                <Route path="/partners">
                   <Partners />
                 </Route>
-                <Route exact path="/stories/drone-of-conservation">
+                <Route path="/stories/drone-of-conservation">
                   <StoryDrone />
                 </Route>
-                <Route exact path="/stories/remote-sensing">
+                <Route path="/stories/remote-sensing">
                   <StoryRemote />
                 </Route>
-                <Route exact path="/stories/raised-up-sky">
+                <Route path="/stories/raised-up-sky">
                   <StoryRaised />
                 </Route>
-                <Route exact path="/work/airbox">
+                <Route path="/work/airbox">
                   <WorkAirBox />
                 </Route>
 
-                <Route exact path="/work/clouds">
+                <Route path="/work/clouds">
                   <WorkCloud />
                 </Route>
 
-                <Route exact path="/work/antartica">
+                <Route path="/work/antartica">
                   <WorkAntartica />
                 </Route>
 
-                <Route exact path="/work/marae">
+                <Route path="/work/marae">
                   <WorkMarae />
                 </Route>
 
-                <Route exact path="/work/crude">
+                <Route path="/work/crude">
                   <WorkCrude />
                 </Route>
               </ScrollToTop>
             </Switch>
             <div className="footer">
-              <Menu
-                logo="/images/logo-asl-footer.png"
-                menu="menu-footer"
-                contact="menu-contact-container"
-                logoStyle="menu-logo-asl_footer"
-                menuFooter="menu-list-footer"
-              />
+              <Menu />
             </div>
           </div>
         </div>

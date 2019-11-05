@@ -1,115 +1,71 @@
 @import "./variables.scss";
 
-.menu {
-  background-color: $primary;
-  // border-bottom: 1px solid $secondary;
-  display: flex;
-  align-content: space-around;
-  align-items: center;
+// Menu
+
+.menu-mobile {
+  display: contents;
+  @include lg {
+    display: none;
+  }
+}
+
+.menu-desktop {
+  display: none;
+  @include lg {
+    display: contents;
+  }
+}
+
+.menu-itens {
+  color: $secondary;
+  display: contents;
   font-family: $primaryRegular;
   font-size: $text-md;
-  height: 100px;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
+  margin-top: 40px;
+
+  @include lg {
+    display: flex;
+  }
 }
 
-.menu-border {
-  border-bottom: 1px solid $secondary;
-}
-
-.menu-footer {
-  background-color: $secondary;
-  border-bottom: 1px solid $secondary;
-  display: flex;
-  align-content: space-around;
-  align-items: center;
-  font-family: $primaryRegular;
-  font-size: $text-md;
-  width: 100%;
-}
-
-.menu li {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.menu-footer li {
-  display: inline-block;
-  margin-right: 50px;
-}
-
-.menu a {
+.menu-itens a {
   color: $secondary;
 }
 
-.menu-footer a {
-  color: $primary;
+.menu-item {
+  @include lg {
+    margin-right: 40px;
+  }
 }
 
-.menu-logo-asl {
-  height: 90px;
-  left: 30px;
-  top: 6px;
-  width: 160px;
+.menu-active {
+  border-bottom: 1px solid $secondary;
+}
+
+// TopNav
+
+.menu-top-nav {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-}
-
-.menu-logo-asl_footer {
-  height: 90px;
-  margin-left: 30px;
-  width: 160px;
+  width: 100%;
+  z-index: 2;
+  @include lg {
+    height: 100px;
+  }
 }
 
 .menu-logo-aut {
-  position: fixed;
-  height: 100px;
-  right: 30px;
-  top: 0;
+  @include lg {
+    margin-right: 30px;
+    height: 100px;
+  }
 }
 
-.menu-contact-container {
-  border-left: 1px solid $primary;
-  color: $primary;
-  font-family: $primaryRegular;
-  margin: 0 0 25px 40px;
-  padding-left: 40px;
-}
-
-.menu-contact-flex {
-  display: flex;
-  width: 200px;
-}
-
-.menu-contact-title {
-  font-size: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
-  width: 110px;
-}
-
-.menu-contact-text {
-  font-size: 12px;
-  align-self: center;
-}
-
-.menu-contact-image {
-  align-self: center;
-  width: 34px;
-  height: 34px;
-  margin-right: 10px;
-}
-
-.menu-contact-none {
-  display: none;
-}
-
-.menu-list-footer {
-  margin-top: -155px;
-}
-
-.menu-this-menu {
-  padding-bottom: 10px;
-  border-bottom: 1px solid;
+.menu-logo-asl {
+  @include lg {
+    margin: 10px 0 0 30px;
+    height: 80px;
+  }
 }
