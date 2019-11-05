@@ -1,6 +1,82 @@
 /* general */
 @import "./variables.scss";
 
+.people-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 50px 0;
+  @include md {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.person-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  @include md {
+  }
+}
+
+.people-image_key {
+  width: 200px;
+  @include md {
+    width: 300px;
+  }
+}
+
+.people-image {
+  width: 100px;
+  padding: 0 20px;
+  @include md {
+    padding: 0;
+    width: 200px;
+  }
+  @include lg {
+    padding: 0 20px;
+    width: 200px;
+  }
+}
+
+.people-text {
+  color: $primary;
+  font-family: $primaryBold;
+  text-align: center;
+}
+
+.people-name_key {
+  color: $primary;
+  font-size: $text-md;
+  @include md {
+    font-size: $text-lg;
+  }
+}
+
+.people-position {
+  color: $primary;
+  font-size: $text-sm;
+  margin-bottom: 50px;
+  @include md {
+    font-size: $text-md;
+    margin-bottom: 0;
+  }
+}
+
+.people-name {
+  color: $primary;
+  font-size: $text-sm;
+  @include md {
+    font-size: $text-md;
+  }
+}
+
+// Old
+
 .people-container {
   background-color: $secondary;
   color: $primary;
@@ -14,19 +90,19 @@
   margin: 20px;
 }
 
-.people-image {
-  width: 200px;
-}
+// .people-image {
+//   width: 200px;
+// }
 
 .people-image_work {
   width: 350px;
 }
 
-.people-name {
-  color: $primary;
-  font-family: $primaryBold;
-  font-size: 15px;
-}
+// .people-name {
+//   color: $primary;
+//   font-family: $primaryBold;
+//   font-size: 15px;
+// }
 
 .key-people-row-container {
   margin: auto;

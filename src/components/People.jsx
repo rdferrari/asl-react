@@ -4,12 +4,12 @@ import PeopleList from "../data/people.json";
 
 const KeyPeople = ({ name, position, image, link }) => {
   return (
-    <div className="key-people-container">
-      <img alt="Key people" className="key-people-image" src={image} />
-      <div className="key-people-texts">
+    <div className="">
+      <img alt="Key people" className="people-image_key" src={image} />
+      <div className="people-text">
         <a rel="noopener noreferrer" href={link} target="_blank">
-          <p className="key-people-name">{name}</p>
-          <p className="key-people-position">{position}</p>
+          <p className="people-name_key">{name}</p>
+          <p className="people-position">{position}</p>
         </a>
       </div>
     </div>
@@ -18,10 +18,10 @@ const KeyPeople = ({ name, position, image, link }) => {
 
 const Person = ({ name, image, link }) => {
   return (
-    <div className="person-container">
+    <div className="">
       <a rel="noopener noreferrer" href={link} target="_blank">
         <img alt="Person" className="people-image" src={image} />
-        <div className="key-people-texts">
+        <div className="people-text">
           <p className="people-name">{name}</p>
         </div>
       </a>
@@ -43,30 +43,31 @@ const People = () => {
   });
 
   return (
-    <div className="people-container">
-      <div className="content-container-black">
+    <div className="main-box">
+      <div className="main-header-box_black">
         <header>
-          <h1 className="tagline">People / Tangata</h1>
-          <h2 className="title-black">Key People</h2>
-          <div className="key-people-row-container">
-            <KeyPeople
-              name="Barbara Bollard"
-              position="Director"
-              image="/images/people/barbara.png"
-              link="https://www.aut.ac.nz/profiles?id=em57148&asset=267682"
-            />
-            <KeyPeople
-              name="Pare Keiha"
-              position="Chair"
-              image="/images/people/pare.png"
-              link="https://www.aut.ac.nz/research/professors-listing/pare-keiha"
-            />
-          </div>
+          <h1 className="main-tagline">People / Tangata</h1>
+          <h2 className="main-title">Key People</h2>
         </header>
+
+        <div className="people-box">
+          <KeyPeople
+            name="Barbara Bollard"
+            position="Director"
+            image="/images/people/barbara.png"
+            link="https://www.aut.ac.nz/profiles?id=em57148&asset=267682"
+          />
+          <KeyPeople
+            name="Pare Keiha"
+            position="Chair"
+            image="/images/people/pare.png"
+            link="https://www.aut.ac.nz/research/professors-listing/pare-keiha"
+          />
+        </div>
 
         <div className="content-group-people">
           <h2 className="title-black">People (Alphabetical)</h2>
-          <div className="people-container">
+          <div className="person-box">
             {PeopleListName.map(person => (
               <Person
                 key={person.id}
