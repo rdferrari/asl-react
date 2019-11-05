@@ -5,36 +5,36 @@ import StoriesList from "../data/stories.json";
 
 const Stories = () => {
   return (
-    <div className="content-container-full">
-      <div className="content-container-black">
+    <div className="main-box">
+      <div className="main-header-box_black">
         <header>
-          <h1 className="tagline">Recent Stories / Te kōrero hou</h1>
+          <h1 className="main-tagline">Recent Stories / Te kōrero hou</h1>
         </header>
-        {StoriesList.map(story => (
-          <div key={story.id} className="content-group-black">
-            <div className="content-black">
-              <h2 className="title-black">{story.title}</h2>
-              <p className="intro-black">{story.intro}</p>
-              <p className="intro-black_sub">{story.text}</p>
-              <button className="button-one bt-small">
-                <Link to={story.link}>See more</Link>
-              </button>
-            </div>
-            <div className="images-black">
-              <img
-                alt="Recent stories images"
-                className="image-right"
-                src={story.image_one}
-              />
-              <img
-                alt="Recent stories images"
-                className="image-right"
-                src={story.image_two}
-              />
-            </div>
-          </div>
-        ))}
       </div>
+      {StoriesList.map(story => (
+        <div key={story.id} className="main-content-box_black">
+          <div className="main-box-left">
+            <h2 className="main-title">{story.title}</h2>
+            <p className="main-intro">{story.intro}</p>
+            <p className="main-intro_sub">{story.text}</p>
+            <button className="button-one bt-small">
+              <Link to={story.link}>See more</Link>
+            </button>
+          </div>
+          <div className="images-black">
+            <img
+              alt="Recent stories images"
+              className="main-content-image"
+              src={story.image_one}
+            />
+            <img
+              alt="Recent stories images"
+              className="main-content-image"
+              src={story.image_two}
+            />
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

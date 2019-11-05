@@ -19,6 +19,7 @@ a {
 
 .main-box {
   background-color: $secondary;
+  color: $primary;
   padding-top: 60px;
   @include lg {
     padding-top: 100px;
@@ -46,6 +47,20 @@ a {
   @include lg {
     left: 150px;
     top: 100px;
+  }
+}
+
+.main-header-box_black {
+  padding: 0 20px;
+  @include md {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+  @include xl {
+    padding: 0 100px;
+  }
+  @include xxl {
+    padding: 0 300px;
   }
 }
 
@@ -113,6 +128,23 @@ a {
   }
 }
 
+.main-content-box_black {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  @include md {
+    flex-direction: row;
+    padding: 10px 50px;
+  }
+  @include xl {
+    padding: 20px 100px;
+  }
+  @include xxl {
+    padding: 20px 300px;
+  }
+}
+
 .main-box-left {
   padding-right: 0;
   @include md {
@@ -170,6 +202,26 @@ a {
     width: 400px;
     height: auto;
   }
+}
+
+.main-title {
+  font-family: $primaryBold;
+  font-size: $text-xl;
+}
+
+.main-intro {
+  font-family: $fontSecondary;
+  font-size: $text-lg;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.main-intro_sub {
+  font-family: $fontSecondary;
+  font-size: $text-md;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
 }
 
 // old
