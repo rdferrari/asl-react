@@ -1,26 +1,57 @@
 /* general */
 @import "./variables.scss";
 
-.partners-container {
+.partners-box {
   background-color: $primary;
   color: $secondary;
-  margin-bottom: 200px;
-  position: relative;
-  width: 100%;
+  padding: 60px 0;
+  @include lg {
+    padding-top: 100px;
+  }
 }
 
-.tagline-partners {
+.partners-tagline {
   color: $secondary;
-  font-size: $text-lg;
-  font-weight: 100;
-  width: 500px;
-  padding: 50px 0 0 100px;
+  font-family: $primaryRegular;
+  font-size: $text-md;
+  margin-top: 50px;
+  @include md {
+    font-size: $text-lg;
+    margin-top: 100px;
+  }
 }
 
-.partners-maps-container {
+.partners-box-map {
+  position: relative;
   display: flex;
-  max-width: 1400px;
-  padding-left: 100px;
+  flex-direction: column;
+  @include lg {
+    flex-direction: row;
+  }
+}
+
+.partners-box-map_intro {
+  display: flex;
+  flex-direction: column;
+  @include lg {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 100px;
+  }
+  @include xxl {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 200px;
+  }
+}
+
+.partners-map-text {
+  font-family: $primaryRegular;
+  font-size: $text-sm;
+  text-align: center;
+  @include md {
+    font-size: $text-md;
+  }
 }
 
 .partners-map-image {
@@ -29,19 +60,20 @@
   height: auto;
 }
 
-.partners-map-text {
+.border_hack {
+  border-left: none;
+  @include lg {
+    border-left: 1px solid $secondary;
+  }
+}
+
+.partners-back-bt {
+  cursor: pointer;
   font-family: $primaryRegular;
-  font-size: 15px;
-  text-align: center;
-}
-
-.partners-map-detail-container {
-  position: relative;
-}
-
-.partners-map-detail-image {
-  width: 1200px;
-  height: auto;
+  font-size: $text-sm;
+  @include md {
+    font-size: $text-md;
+  }
 }
 
 .partners-europe-detail-image {
@@ -53,38 +85,123 @@
   width: auto;
 }
 
-.partners-bt-invisible {
-  cursor: pointer;
-  position: absolute;
-  left: 470px;
-  top: 30%;
-  background-color: transparent;
-  height: 100px;
-  width: 100px;
-}
-
-.partners-back-bt {
-  cursor: pointer;
-  font-family: $primaryRegular;
-  font-size: 15px;
-  padding-left: 100px;
+.partners-maps_detail {
+  margin-top: 50px;
+  width: 280px;
+  @include md {
+    margin-bottom: 100px;
+    width: 600px;
+  }
+  @include lg {
+    width: 900px;
+  }
 }
 
 .partners-bt-invisible-nz {
   cursor: pointer;
   position: absolute;
-  left: 980px;
-  top: 17%;
+  left: 250px;
+  top: 290px;
   background-color: transparent;
-  height: 100px;
-  width: 100px;
+  height: 25px;
+  width: 20px;
+  @include md {
+    left: 550px;
+    top: 380px;
+    height: 50px;
+    width: 40px;
+  }
+  @include xl {
+    left: 840px;
+    top: 420px;
+    height: 80px;
+    width: 60px;
+  }
+  @include xxl {
+    left: 1040px;
+    top: 420px;
+    height: 80px;
+    width: 60px;
+  }
 }
 
 .partners-nz-detail-image {
   cursor: pointer;
   position: absolute;
-  left: 800px;
-  top: 1%;
-  height: 300px;
-  width: auto;
+  left: 180px;
+  top: 230px;
+  width: 100px;
+
+  @include md {
+    left: 500px;
+    top: 320px;
+    width: 150px;
+  }
+  @include xl {
+    left: 750px;
+    top: 380px;
+    width: 200px;
+  }
+  @include xxl {
+    left: 950px;
+    top: 380px;
+    width: 200px;
+  }
+}
+
+.partners-bt-invisible_world {
+  cursor: pointer;
+  position: absolute;
+  left: 135px;
+  top: 265px;
+  background-color: transparent;
+  height: 25px;
+  width: 20px;
+  @include md {
+    left: 285px;
+    top: 380px;
+    height: 80px;
+    width: 50px;
+  }
+  @include xl {
+    margin-left: 0;
+    left: 460px;
+    top: 460px;
+    height: 90px;
+    width: 70px;
+  }
+  @include xxl {
+    margin-left: 0;
+    left: 660px;
+    top: 460px;
+    height: 90px;
+    width: 70px;
+  }
+}
+
+.partners-europe-detail-image {
+  cursor: pointer;
+  position: absolute;
+  left: 110px;
+  top: 200px;
+  width: 100px;
+  height: auto;
+
+  @include md {
+    left: 250px;
+    top: 300px;
+    width: 150px;
+  }
+  @include xl {
+    margin-left: 0;
+    left: 380px;
+    top: 360px;
+    width: 200px;
+  }
+  @include xxl {
+    margin-left: 0;
+    left: 580px;
+    top: 360px;
+    width: 200px;
+  }
 }

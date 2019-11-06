@@ -40,11 +40,14 @@ class Partners extends Component {
 
   _maps() {
     return (
-      <div className="partners-container">
-        <header>
-          <h1 className="tagline-partners">Partners / E Hoa</h1>
-        </header>
-        <div className="partners-maps-container">
+      <div className="partners-box">
+        <div className="main-header-box_black">
+          <header>
+            <h1 className="partners-tagline">Partners / E Hoa</h1>
+          </header>
+        </div>
+
+        <div className="partners-box-map_intro">
           <div>
             <img
               alt="Map Australia and New Zealand"
@@ -60,7 +63,7 @@ class Partners extends Component {
             <img
               alt="Map world"
               onClick={this.toogleWorld}
-              className="partners-map-image"
+              className="partners-map-image border_hack"
               src="/images/maps/world.png"
             />
             <p className="partners-map-text">International Partners</p>
@@ -74,19 +77,20 @@ class Partners extends Component {
     const { europe } = this.state;
 
     return (
-      <div className="partners-container">
-        <header>
-          <h1 className="tagline-partners">
-            International Partners / Hoa Taiao
-          </h1>
-          <p onClick={this.toogleWorld} className="partners-back-bt">
-            Back - Partners / E Hoa
-          </p>
-        </header>
-        <div className="partners-map-detail-container">
+      <div className="partners-box">
+        <div className="main-header-box_black">
+          <header>
+            <h1 className="partners-tagline">
+              International Partners / Hoa Taiao
+            </h1>
+            <p onClick={this.toogleWorld} className="partners-back-bt">
+              Back - Partners / E Hoa
+            </p>
+          </header>
+
           {europe === true ? (
             <img
-              alt="Map Europe detail"
+              alt="Map Europe"
               onClick={this.toogleEurope}
               className="partners-europe-detail-image"
               src="/images/maps/europe-detail.png"
@@ -94,13 +98,13 @@ class Partners extends Component {
           ) : (
             <div
               onClick={this.toogleEurope}
-              className="partners-bt-invisible"
+              className="partners-bt-invisible_world"
             ></div>
           )}
 
           <img
-            alt="Map world detail"
-            className="partners-map-detail-image"
+            alt="Map worldl"
+            className="partners-maps_detail"
             src="/images/maps/world-detail.png"
           />
         </div>
@@ -112,16 +116,17 @@ class Partners extends Component {
     const { nz } = this.state;
 
     return (
-      <div className="partners-container">
-        <header>
-          <h1 className="tagline-partners">
-            Partners in Australia and NZ / Hoa i roto o Ahitereiria me Aotearoa
-          </h1>
-          <p onClick={this.toogleOceania} className="partners-back-bt">
-            Back - Partners / E Hoa
-          </p>
-        </header>
-        <div className="partners-map-detail-container">
+      <div className="partners-box">
+        <div className="main-header-box_black">
+          <header>
+            <h1 className="partners-tagline">
+              Partners in Australia and NZ / Hoa i roto o Ahitereiria me
+              Aotearoa
+            </h1>
+            <p onClick={this.toogleOceania} className="partners-back-bt">
+              Back - Partners / E Hoa
+            </p>
+          </header>
           {nz === true ? (
             <img
               alt="Map NZ details"
@@ -138,7 +143,7 @@ class Partners extends Component {
 
           <img
             alt="Map AU and NZ details"
-            className="partners-map-detail-image"
+            className="partners-maps_detail"
             src="/images/maps/au-nz-detail.png"
           />
         </div>
