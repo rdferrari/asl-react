@@ -1,75 +1,167 @@
 /* general */
 @import "./variables.scss";
 
+.story-box {
+  background-color: $primary;
+  color: $secondary;
+  padding: 60px 0;
+  @include lg {
+    padding-top: 100px;
+  }
+}
+
 .story-intro {
-  color: $primary;
+  color: $secondary;
   font-family: $fontSecondary;
-  font-size: $text-lg;
-  width: 600px;
+  font-size: $text-sm;
+  width: 90%;
+  margin-bottom: 50px;
+  @include md {
+    color: $primary;
+    font-size: $text-md;
+    width: 400px;
+  }
+  @include lg {
+    font-size: $text-lg;
+    width: 550px;
+  }
 }
 
 .story-tagline {
-  color: $primary;
-  font-size: $text-xxl;
+  color: $secondary;
+  font-size: $text-lg;
+  font-weight: 100;
+  margin-top: 40px;
+  width: 90%;
+  @include md {
+    color: $primary;
+    font-size: $text-xl;
+  }
+  @include lg {
+    font-size: $text-xxl;
+  }
+  @include xxl {
+    font-size: $text-xxxl;
+  }
 }
 
-.story-container {
-  margin: auto;
-  width: 80%;
-  padding: 100px 20px 0 20px;
+.story-content-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  @include md {
+    margin: 50px;
+  }
+  @include lg {
+    margin: 80px 100px;
+  }
+  @include xxl {
+    margin: 80px 200px;
+  }
 }
 
 .story-container-flex {
   display: flex;
-  margin-bottom: 50px;
-  max-width: 1200px;
+  flex-direction: column;
+  @include lg {
+    flex-direction: row;
+  }
 }
 
-.story-image-text {
-  margin: 20px 0;
-  width: 400px;
-  height: auto;
+.story-image {
+  width: 100%;
+  @include lg {
+    width: 400px;
+    height: 250px;
+  }
+  @include xxl {
+    width: 500px;
+    height: auto;
+  }
 }
 
-.story-intro-text {
-  font-family: $fontSecondary;
-  font-size: $text-md;
-  padding-right: 80px;
+.news-image {
+  width: 100%;
+  @include xl {
+    width: 50%;
+  }
 }
 
-.story-news-title {
+.story-text {
   color: $secondary;
-  font-family: $primaryRegular;
-  font-size: 28px;
-  margin: 80px 0;
+  font-family: $fontSecondary;
+  font-size: $text-sm;
+  margin-bottom: 50px;
+  @include md {
+    font-size: $text-md;
+  }
+
+  @include lg {
+    font-size: $text-md;
+    margin-bottom: 0;
+    padding-right: 80px;
+  }
+  @include xxl {
+    font-size: $text-lg;
+  }
 }
 
-.story-image-news {
-  width: 400px;
-  height: auto;
+.story-news-tag {
+  color: $secondary;
+  font-size: $text-md;
+  font-weight: 100;
+  margin: 80px 20px -30px 20px;
+  @include md {
+    font-size: $text-xl;
+    margin: 80px 20px -30px 50px;
+  }
+  @include xl {
+    font-size: $text-xxl;
+    margin: 80px 20px -80px 100px;
+  }
+  @include xxl {
+    font-size: $text-xxl;
+    margin: 80px 20px -80px 200px;
+  }
 }
 
 .story-news-content {
-  padding: 0 50px;
+  padding-left: 0;
+  @include xl {
+    padding-left: 50px;
+  }
 }
 
 .story-title-news {
-  color: $secondary;
-  font-family: $primaryRegular;
-  font-size: 28px;
+  font-family: $primaryBold;
+  font-size: $text-md;
+  @include md {
+    font-size: $text-lg;
+  }
+  @include lg {
+    font-size: $text-xl;
+    margin-top: -10px;
+  }
 }
 
 .story-text-news {
-  margin-bottom: 30px;
   font-family: $fontSecondary;
-  font-size: $text-md;
-  font-weight: 100;
+  font-size: $text-sm;
+  margin-bottom: 20px;
+  @include md {
+    font-size: $text-md;
+    margin-bottom: 40px;
+  }
 }
 
-.story-image-fix {
-  margin-bottom: -10px;
+.story-img-bottom_hack {
+  margin-bottom: -5px;
 }
 
-.story-container-news {
-  margin-left: 100px;
-}
+// old
+
+// .story-tagline {
+//   color: $primary;
+//   font-size: $text-xxl;
+//

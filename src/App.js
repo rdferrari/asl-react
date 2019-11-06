@@ -68,32 +68,32 @@ class App extends Component {
                 <Route path="/partners">
                   <Partners />
                 </Route>
-                <Route path="/stories/drone-of-conservation">
+                <Route path="/drone-of-conservation">
                   <StoryDrone />
                 </Route>
-                <Route path="/stories/remote-sensing">
+                <Route path="/remote-sensing">
                   <StoryRemote />
                 </Route>
-                <Route path="/stories/raised-up-sky">
+                <Route path="/raised-up-sky">
                   <StoryRaised />
                 </Route>
-                <Route path="/work/airbox">
+                <Route path="/airbox">
                   <WorkAirBox />
                 </Route>
 
-                <Route path="/work/clouds">
+                <Route path="/clouds">
                   <WorkCloud />
                 </Route>
 
-                <Route path="/work/antartica">
+                <Route path="/antartica">
                   <WorkAntartica />
                 </Route>
 
-                <Route path="/work/marae">
+                <Route path="/marae">
                   <WorkMarae />
                 </Route>
 
-                <Route path="/work/crude">
+                <Route path="/crude">
                   <WorkCrude />
                 </Route>
               </ScrollToTop>

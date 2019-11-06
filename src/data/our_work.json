@@ -9,24 +9,24 @@
     "id": 2,
     "name": "O Tū Kapua (What Clouds See)",
     "image": "/images/work/birds.png",
-    "link": "/work/clouds"
+    "link": "/clouds"
   },
   {
     "id": 3,
     "name": "Photogrammetry Hillary Hut, Antarctica",
     "image": "/images/work/ice.png",
-    "link": "/work/antartica"
+    "link": "/antartica"
   },
   {
     "id": 5,
     "name": "AUT Marae Point Cloud",
     "image": "/images/work/maori.png",
-    "link": "/work/marae"
+    "link": "/marae"
   },
   {
     "id": 6,
     "name": "Crude",
     "image": "/images/work/tyres.png",
-    "link": "/work/crude"
+    "link": "/crude"
   }
 ]

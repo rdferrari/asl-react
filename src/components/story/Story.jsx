@@ -10,26 +10,31 @@ const Story = ({
   news
 }) => {
   return (
-    <div>
-      <header className="image-container">
-        <div className="home-header-text">
+    <div className="story-box">
+      <header className="main-image-box">
+        <div className="main-header-box">
           <h1 className="story-tagline">{header}</h1>
           <p className="story-intro">{intro}</p>
         </div>
-        <img alt="" className="full-image" src={imageHeader} />
+        <img
+          alt="Maori tree"
+          className="home-full-width-img"
+          src={imageHeader}
+        />
       </header>
-      <div className="story-container">
+
+      <div className="story-content-box">
         <div className="story-container-flex">
-          <p className="story-intro-text">{text}</p>
+          <p className="story-text">{text}</p>
           <div>
-            <img alt="" className="story-image-text" src={imageTextOne} />
-            <img alt="" className="story-image-text" src={imageTextTwo} />
+            <img alt="" className="story-image" src={imageTextOne} />
+            <img alt="" className="story-image" src={imageTextTwo} />
           </div>
         </div>
-        {news === true ? (
-          <h2 className="story-news-title">News Coverage / Purongo</h2>
-        ) : null}
       </div>
+      {news === true ? (
+        <h2 className="story-news-tag">News Coverage / Purongo</h2>
+      ) : null}
     </div>
   );
 };
