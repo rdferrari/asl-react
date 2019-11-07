@@ -1,1 +1,8 @@
 @import "./variables.scss";
+
+.our-vision-box-right {
+  margin-top: 50px;
+  @include lg {
+    margin-top: 150px;
+  }
+}

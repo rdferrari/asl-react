@@ -5,13 +5,13 @@ import PeopleList from "../data/people.json";
 const KeyPeople = ({ name, position, image, link }) => {
   return (
     <div className="">
-      <img alt="Key people" className="people-image_key" src={image} />
-      <div className="people-text">
-        <a rel="noopener noreferrer" href={link} target="_blank">
+      <a rel="noopener noreferrer" href={link} target="_blank">
+        <img alt="Key people" className="people-image_key" src={image} />
+        <div className="people-text">
           <p className="people-name_key">{name}</p>
           <p className="people-position">{position}</p>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   );
 };

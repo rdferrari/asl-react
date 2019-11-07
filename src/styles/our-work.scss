@@ -53,6 +53,7 @@
 
 .our-work-name {
   color: $primary;
+  font-family: $primaryRegular;
   font-size: $text-sm;
   text-align: center;
   @include md {

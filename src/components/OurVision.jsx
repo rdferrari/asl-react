@@ -51,7 +51,7 @@ const OurVision = () => {
             discoveries emerge.
           </p>
         </div>
-        <div className="main-box-right">
+        <div className="our-vision-box-right">
           <img
             alt="Ice"
             className="main-content-image"

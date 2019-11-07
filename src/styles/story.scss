@@ -1,6 +1,13 @@
 /* general */
 @import "./variables.scss";
 
+.story-box-right {
+  margin-top: 50px;
+  @include lg {
+    margin-top: 100px;
+  }
+}
+
 .story-box {
   background-color: $primary;
   color: $secondary;
@@ -73,7 +80,7 @@
   width: 100%;
   @include lg {
     width: 400px;
-    height: 250px;
+    height: auto;
   }
   @include xxl {
     width: 500px;

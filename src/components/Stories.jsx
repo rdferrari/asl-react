@@ -22,7 +22,7 @@ const Stories = () => {
               <Link to={story.link}>See more</Link>
             </button>
           </div>
-          <div className="main-box-right">
+          <div className="story-box-right">
             <img
               alt="Recent stories images"
               className="main-content-image"
