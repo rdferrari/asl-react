@@ -18,7 +18,7 @@
 }
 
 .story-intro {
-  color: $secondary;
+  color: $primary;
   font-family: $fontSecondary;
   font-size: $text-sm;
   width: 90%;
@@ -35,13 +35,12 @@
 }
 
 .story-tagline {
-  color: $secondary;
+  color: $primary;
   font-size: $text-lg;
   font-weight: 100;
   margin-top: 40px;
   width: 90%;
   @include md {
-    color: $primary;
     font-size: $text-xl;
   }
   @include lg {

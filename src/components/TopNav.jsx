@@ -6,7 +6,7 @@ class TopNav extends Component {
   render() {
     return (
       <div className="menu-top-nav">
-        <div>
+        <div className="menu-logo_hack">
           <Link to="/">
             <img
               alt="Art Science Lab logo"

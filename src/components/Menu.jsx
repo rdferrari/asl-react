@@ -35,6 +35,7 @@ class Menu extends Component {
   _renderMenu() {
     return (
       <div className="menu-itens">
+        <MenuItem handleMenu={this._handleMenu} to="/#" label="Home" />
         <MenuItem
           handleMenu={this._handleMenu}
           to="/our-vision"

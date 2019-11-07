@@ -84,16 +84,26 @@
 }
 
 .menu-logo-asl {
+  display: none;
   margin: 5px 0 0 10px;
   height: 50px;
   @include xl {
+    display: inherit;
     margin: 10px 0 0 30px;
     height: 80px;
   }
 }
 
 .menu-hamburger {
-  margin-top: 15px;
+  margin: 15px 0 0 20px;
   width: 30px;
   height: 30px;
+}
+
+.menu-logo_hack {
+  display: none;
+
+  @include xl {
+    display: inherit;
+  }
 }
