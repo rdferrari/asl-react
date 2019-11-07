@@ -17,7 +17,7 @@ const Labs = () => {
             <h2 className="main-title">{lab.title}</h2>
             <p className="main-intro">{lab.intro}</p>
             <p className="main-intro_sub">{lab.text}</p>
-            <button className="button-one bt-small">
+            <button className="button-one bt-small button-one_bottom-hack">
               <a rel="noopener noreferrer" target="_blank" href={lab.link}>
                 Learn more
               </a>
